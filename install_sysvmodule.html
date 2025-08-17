@@ -1,0 +1,467 @@
+<pre>[dubi@localhost ~]$ ifconfig
+enp3s0: flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+        ether f4:b5:20:2e:82:97  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 32  bytes 2784 (2.7 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 32  bytes 2784 (2.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:0f:c8:f2  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0f0u6: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 192.168.0.8  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::d2c3:69f7:d45b:5809  prefixlen 64  scopeid 0x20&lt;link&gt;
+        ether 08:10:77:41:db:0f  txqueuelen 1000  (Ethernet)
+        RX packets 5698  bytes 1753181 (1.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1348  bytes 194072 (189.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[dubi@localhost ~]$ sudo yum install libipc-sharelite-perl
+[sudo] dubi의 암호:
+마지막 메타자료 만료확인(0:27:47 이전): 2023년 07월 18일 (화) 오전 11시 02분 58초.
+일치하는 인수가 없습니다: <b>libipc-sharelite-perl</b>
+오류: 일치하는 항목을 찾을 수 없습니다: libipc-sharelite-perl
+[dubi@localhost ~]$ python --version
+bash: python: 명령을 찾을 수 없습니다...
+[dubi@localhost ~]$ python
+bash: python: 명령을 찾을 수 없습니다...
+[dubi@localhost ~]$ python3 --version
+Python 3.6.8
+[dubi@localhost ~]$ sudo dnf install python2
+[sudo] dubi의 암호:
+죄송합니다만, 다시 시도하십시오.
+[sudo] dubi의 암호:
+마지막 메타자료 만료확인(0:33:23 이전): 2023년 07월 18일 (화) 오전 11시 02분 58초.
+종속성이 해결되었습니다.
+================================================================================
+ 꾸러미                구조   버전                              저장소     크기
+================================================================================
+설치 중:
+ <font color="#8AE234"><b>python2              </b></font> x86_64 2.7.18-12.module_el8+299+aa6e9afa appstream 110 k
+종속 꾸러미 설치 중:
+ <font color="#8AE234"><b>python2-libs         </b></font> x86_64 2.7.18-12.module_el8+299+aa6e9afa appstream 6.5 M
+ <font color="#8AE234"><b>python2-pip-wheel    </b></font> noarch 9.0.3-19.module_el8+299+aa6e9afa  appstream 892 k
+ <font color="#8AE234"><b>python2-setuptools-wheel</b></font>
+                       noarch 39.0.1-13.module_el8+299+aa6e9afa appstream 287 k
+취약한 종속 꾸러미 설치 중:
+ <font color="#8AE234"><b>python2-pip          </b></font> noarch 9.0.3-19.module_el8+299+aa6e9afa  appstream 1.8 M
+ <font color="#8AE234"><b>python2-setuptools   </b></font> noarch 39.0.1-13.module_el8+299+aa6e9afa appstream 702 k
+모듈 스트림 활성화:
+ python27                     2.7
+
+연결 요약
+================================================================================
+설치  6 꾸러미
+
+전체 내려받기 크기: 10 M
+설치된 크기 : 37 M
+진행할까요? [y/N]: y
+꾸러미 내려받기 중:
+(1/6): python2-2.7.18-12.module_el8+299+aa6e9af 251 kB/s | 110 kB     00:00
+(2/6): python2-pip-wheel-9.0.3-19.module_el8+29 413 kB/s | 892 kB     00:02
+(3/6): python2-pip-9.0.3-19.module_el8+299+aa6e 531 kB/s | 1.8 MB     00:03
+(4/6): python2-setuptools-39.0.1-13.module_el8+ 573 kB/s | 702 kB     00:01
+(5/6): python2-setuptools-wheel-39.0.1-13.modul 422 kB/s | 287 kB     00:00
+(6/6): python2-libs-2.7.18-12.module_el8+299+aa 987 kB/s | 6.5 MB     00:06
+--------------------------------------------------------------------------------
+합계                                            1.4 MB/s |  10 MB     00:07
+연결 확인 실행 중
+연결 확인에 성공했습니다.
+연결 시험 실행 중
+연결 시험에 성공했습니다.
+연결 실행 중
+  준비 중     :                                                             1/1
+  설치 중     : python2-setuptools-wheel-39.0.1-13.module_el8+299+aa6e9af   1/6
+  설치 중     : python2-pip-wheel-9.0.3-19.module_el8+299+aa6e9afa.noarch   2/6
+  설치 중     : python2-libs-2.7.18-12.module_el8+299+aa6e9afa.x86_64       3/6
+  설치 중     : python2-pip-9.0.3-19.module_el8+299+aa6e9afa.noarch         4/6
+  설치 중     : python2-setuptools-39.0.1-13.module_el8+299+aa6e9afa.noar   5/6
+  설치 중     : python2-2.7.18-12.module_el8+299+aa6e9afa.x86_64            6/6
+  구현 중     : python2-2.7.18-12.module_el8+299+aa6e9afa.x86_64            6/6
+/sbin/ldconfig: /usr/lib64/llvm15/lib/libclang.so.15 is not a symbolic link
+
+
+  확인 중     : python2-2.7.18-12.module_el8+299+aa6e9afa.x86_64            1/6
+  확인 중     : python2-libs-2.7.18-12.module_el8+299+aa6e9afa.x86_64       2/6
+  확인 중     : python2-pip-9.0.3-19.module_el8+299+aa6e9afa.noarch         3/6
+  확인 중     : python2-pip-wheel-9.0.3-19.module_el8+299+aa6e9afa.noarch   4/6
+  확인 중     : python2-setuptools-39.0.1-13.module_el8+299+aa6e9afa.noar   5/6
+  확인 중     : python2-setuptools-wheel-39.0.1-13.module_el8+299+aa6e9af   6/6
+
+설치되었습니다:
+  python2-2.7.18-12.module_el8+299+aa6e9afa.x86_64
+  python2-libs-2.7.18-12.module_el8+299+aa6e9afa.x86_64
+  python2-pip-9.0.3-19.module_el8+299+aa6e9afa.noarch
+  python2-pip-wheel-9.0.3-19.module_el8+299+aa6e9afa.noarch
+  python2-setuptools-39.0.1-13.module_el8+299+aa6e9afa.noarch
+  python2-setuptools-wheel-39.0.1-13.module_el8+299+aa6e9afa.noarch
+
+완료되었습니다!
+[dubi@localhost ~]$ python2 --version
+Python 2.7.18
+[dubi@localhost ~]$ pip install sysv_ipc
+bash: pip: 명령을 찾을 수 없습니다...
+[dubi@localhost ~]$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1863k  100 1863k    0     0  1038k      0  0:00:01  0:00:01 --:--:-- 1037k
+[dubi@localhost ~]$ python2 get-pip.py
+<font color="#C4A000">DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.</font>
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pip&lt;21.0
+  Downloading pip-20.3.4-py2.py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 973 kB/s
+Collecting wheel
+  Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+Installing collected packages: pip, wheel
+Successfully installed pip-20.3.4 wheel-0.37.1
+[dubi@localhost ~]$ python2 -m pip install sysv_ipc
+<font color="#C4A000">DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.</font>
+Defaulting to user installation because normal site-packages is not writeable
+Collecting sysv_ipc
+  Downloading sysv_ipc-1.1.0.tar.gz (99 kB)
+     |████████████████████████████████| 99 kB 5.6 MB/s
+<font color="#CC0000">    ERROR: Command errored out with exit status 1:</font>
+<font color="#CC0000">     command: /usr/bin/python2 -c &apos;import sys, setuptools, tokenize; sys.argv[0] = &apos;&quot;&apos;&quot;&apos;/tmp/pip-install-pcEajr/sysv-ipc/setup.py&apos;&quot;&apos;&quot;&apos;; __file__=&apos;&quot;&apos;&quot;&apos;/tmp/pip-install-pcEajr/sysv-ipc/setup.py&apos;&quot;&apos;&quot;&apos;;f=getattr(tokenize, &apos;&quot;&apos;&quot;&apos;open&apos;&quot;&apos;&quot;&apos;, open)(__file__);code=f.read().replace(&apos;&quot;&apos;&quot;&apos;\r\n&apos;&quot;&apos;&quot;&apos;, &apos;&quot;&apos;&quot;&apos;\n&apos;&quot;&apos;&quot;&apos;);f.close();exec(compile(code, __file__, &apos;&quot;&apos;&quot;&apos;exec&apos;&quot;&apos;&quot;&apos;))&apos; egg_info --egg-base /tmp/pip-pip-egg-info-LAm2Vs</font>
+<font color="#CC0000">         cwd: /tmp/pip-install-pcEajr/sysv-ipc/</font>
+<font color="#CC0000">    Complete output (8 lines):</font>
+<font color="#CC0000">    Traceback (most recent call last):</font>
+<font color="#CC0000">      File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;</font>
+<font color="#CC0000">      File &quot;/tmp/pip-install-pcEajr/sysv-ipc/setup.py&quot;, line 11, in &lt;module&gt;</font>
+<font color="#CC0000">        import prober</font>
+<font color="#CC0000">      File &quot;prober.py&quot;, line 137</font>
+<font color="#CC0000">        d[&quot;SYSV_IPC_VERSION&quot;] = f&apos;&quot;{version}&quot;&apos;</font>
+<font color="#CC0000">                                             ^</font>
+<font color="#CC0000">    SyntaxError: invalid syntax</font>
+<font color="#CC0000">    ----------------------------------------</font>
+<font color="#CC0000">ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.</font>
+[dubi@localhost ~]$ pwd
+/home/dubi
+[dubi@localhost ~]$ cd QtWorks/
+[dubi@localhost QtWorks]$ cd sysv_ipc/
+[dubi@localhost sysv_ipc]$ python2 setup.py install
+******************************************************************************
+* Setup can&apos;t determine the value of PAGE_SIZE on your system, so it will
+* default to 4096 which may not be correct.
+*
+* Please report this message and your operating system info to the package
+* maintainer listed in the README file.
+******************************************************************************
+running install
+error: can&apos;t create or remove files in install directory
+
+The following error occurred while trying to add or remove files in the
+installation directory:
+
+    [Errno 13] Permission denied: &apos;/usr/lib64/python2.7/site-packages/test-easy-install-8546.write-test&apos;
+
+The installation directory you specified (via --install-dir, --prefix, or
+the distutils default setting) was:
+
+    /usr/lib64/python2.7/site-packages/
+
+Perhaps your account does not have write access to this directory?  If the
+installation directory is a system-owned directory, you may need to sign in
+as the administrator or &quot;root&quot; account.  If you do not have administrative
+access to this machine, you may wish to choose a different installation
+directory, preferably one that is listed in your PYTHONPATH environment
+variable.
+
+For information on other options, you may wish to consult the
+documentation at:
+
+  https://setuptools.readthedocs.io/en/latest/easy_install.html
+
+Please make the appropriate changes for your system and try again.
+
+[dubi@localhost sysv_ipc]$ python2 setup.py install --user
+******************************************************************************
+* Setup can&apos;t determine the value of PAGE_SIZE on your system, so it will
+* default to 4096 which may not be correct.
+*
+* Please report this message and your operating system info to the package
+* maintainer listed in the README file.
+******************************************************************************
+running install
+running bdist_egg
+running egg_info
+writing sysv_ipc.egg-info/PKG-INFO
+writing top-level names to sysv_ipc.egg-info/top_level.txt
+writing dependency_links to sysv_ipc.egg-info/dependency_links.txt
+reading manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+reading manifest template &apos;MANIFEST.in&apos;
+warning: no previously-included files matching &apos;*.pyc&apos; found anywhere in distribution
+warning: no previously-included files matching &apos;*.o&apos; found anywhere in distribution
+writing manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building &apos;sysv_ipc&apos; extension
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python2.7 -c sysv_ipc_module.c -o build/temp.linux-x86_64-2.7/sysv_ipc_module.o
+<b>sysv_ipc_module.c:32:10:</b> <font color="#EF2929"><b>fatal error: </b></font>Python.h: No such file or directory
+ #include <font color="#EF2929"><b>&quot;Python.h&quot;</b></font>
+          <font color="#EF2929"><b>^~~~~~~~~~</b></font>
+compilation terminated.
+error: command &apos;gcc&apos; failed with exit status 1
+[dubi@localhost sysv_ipc]$ sudo dnf install python2-devel
+[sudo] dubi의 암호:
+마지막 메타자료 만료확인(0:55:40 이전): 2023년 07월 18일 (화) 오전 11시 02분 58초.
+종속성이 해결되었습니다.
+================================================================================
+ 꾸러미                구조   버전                              저장소     크기
+================================================================================
+설치 중:
+ <font color="#8AE234"><b>python2-devel        </b></font> x86_64 2.7.18-12.module_el8+299+aa6e9afa appstream 237 k
+종속 꾸러미 설치 중:
+ <font color="#8AE234"><b>python2-rpm-macros   </b></font> noarch 3-38.module_el8+299+aa6e9afa      appstream  14 k
+ <font color="#8AE234"><b>python3-rpm-generators</b></font>
+                       noarch 5-8.el8                           appstream  25 k
+
+연결 요약
+================================================================================
+설치  3 꾸러미
+
+전체 내려받기 크기: 276 k
+설치된 크기 : 574 k
+진행할까요? [y/N]: y
+꾸러미 내려받기 중:
+(1/3): python2-rpm-macros-3-38.module_el8+299+a 361 kB/s |  14 kB     00:00
+(2/3): python3-rpm-generators-5-8.el8.noarch.rp 310 kB/s |  25 kB     00:00
+(3/3): python2-devel-2.7.18-12.module_el8+299+a 594 kB/s | 237 kB     00:00
+--------------------------------------------------------------------------------
+합계                                            197 kB/s | 276 kB     00:01
+연결 확인 실행 중
+연결 확인에 성공했습니다.
+연결 시험 실행 중
+연결 시험에 성공했습니다.
+연결 실행 중
+  준비 중     :                                                             1/1
+  설치 중     : python3-rpm-generators-5-8.el8.noarch                       1/3
+  설치 중     : python2-rpm-macros-3-38.module_el8+299+aa6e9afa.noarch      2/3
+  설치 중     : python2-devel-2.7.18-12.module_el8+299+aa6e9afa.x86_64      3/3
+  구현 중     : python2-devel-2.7.18-12.module_el8+299+aa6e9afa.x86_64      3/3
+/sbin/ldconfig: /usr/lib64/llvm15/lib/libclang.so.15 is not a symbolic link
+
+
+  확인 중     : python2-devel-2.7.18-12.module_el8+299+aa6e9afa.x86_64      1/3
+  확인 중     : python2-rpm-macros-3-38.module_el8+299+aa6e9afa.noarch      2/3
+  확인 중     : python3-rpm-generators-5-8.el8.noarch                       3/3
+
+설치되었습니다:
+  python2-devel-2.7.18-12.module_el8+299+aa6e9afa.x86_64
+  python2-rpm-macros-3-38.module_el8+299+aa6e9afa.noarch
+  python3-rpm-generators-5-8.el8.noarch
+
+완료되었습니다!
+[dubi@localhost sysv_ipc]$ python2 setup.py install --user
+running install
+running bdist_egg
+running egg_info
+writing sysv_ipc.egg-info/PKG-INFO
+writing top-level names to sysv_ipc.egg-info/top_level.txt
+writing dependency_links to sysv_ipc.egg-info/dependency_links.txt
+reading manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+reading manifest template &apos;MANIFEST.in&apos;
+warning: no previously-included files matching &apos;*.pyc&apos; found anywhere in distribution
+warning: no previously-included files matching &apos;*.o&apos; found anywhere in distribution
+writing manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building &apos;sysv_ipc&apos; extension
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python2.7 -c sysv_ipc_module.c -o build/temp.linux-x86_64-2.7/sysv_ipc_module.o
+<b>sysv_ipc_module.c:514:5:</b> <font color="#AD7FA8"><b>warning: </b></font>initialization of ‘<b>Py_ssize_t (*)(PyObject *, Py_ssize_t,  void **)</b>’ {aka ‘<b>long int (*)(struct _object *, long int,  void **)</b><b>’} from incompa</b>tible pointer type ‘<b>int (*)(PyObject *, Py_buffer *, int)</b>’ {aka ‘<b>int (*)(struct _object *, struct bufferinfo *, int)</b>’} [<font color="#AD7FA8"><b>-Wincompatible-pointer-types</b></font>]
+     <font color="#AD7FA8"><b>(</b></font>getbufferproc)shm_get_buffer,
+     <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:514:5:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>SharedMemory_as_buffer.bf_getreadbuffer</b>’)
+<b>sysv_ipc_module.c:515:5:</b> <font color="#AD7FA8"><b>warning: </b></font>initialization of ‘<b>Py_ssize_t (*)(PyObject *, Py_ssize_t,  void **)</b>’ {aka ‘<b>long int (*)(struct _object *, long int,  void **)</b><b>’} from incompa</b>tible pointer type ‘<b>void (*)(PyObject *, Py_buffer *)</b>’ {aka ‘<b>void (*)(struct _object *, struct bufferinfo *)</b>’} [<font color="#AD7FA8"><b>-Wincompatible-pointer-types</b></font>]
+     <font color="#AD7FA8"><b>(</b></font>releasebufferproc)NULL,
+     <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:515:5:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>SharedMemory_as_buffer.bf_getwritebuffer</b>’)
+<b>sysv_ipc_module.c:749:15:</b> <font color="#EF2929"><b>error: </b></font>variable ‘<b>this_module</b>’ has initializer but incomplete type
+ static struct <font color="#EF2929"><b>PyModuleDef</b></font> this_module = {
+               <font color="#EF2929"><b>^~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:750:2:</b> <font color="#EF2929"><b>error: </b></font>‘<b>PyModuleDef_HEAD_INIT</b>’ undeclared here (not in a function); did you mean ‘<b>PyObject_HEAD_INIT</b>’?
+  <font color="#EF2929"><b>PyModuleDef_HEAD_INIT</b></font>,  // m_base
+  <font color="#EF2929"><b>^~~~~~~~~~~~~~~~~~~~~</b></font>
+  <font color="#4E9A06">PyObject_HEAD_INIT</font>
+<b>sysv_ipc_module.c:750:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+<b>sysv_ipc_module.c:750:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:751:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>&quot;sysv_ipc&quot;</b></font>,             // m_name
+  <font color="#AD7FA8"><b>^~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:751:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:752:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>&quot;SYSV IPC module&quot;</b></font>,      // m_doc
+  <font color="#AD7FA8"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:752:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:753:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>-</b></font>1,                     // m_size (space allocated for module globals)
+  <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:753:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:754:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>module_methods</b></font>,         // m_methods
+  <font color="#AD7FA8"><b>^~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:754:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:755:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_reload
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:755:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:756:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_traverse
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:756:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:757:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_clear
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:757:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:758:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>                    // m_free
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:758:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:</b> In function ‘<b>PyInit_sysv_ipc</b>’:
+<b>sysv_ipc_module.c:771:14:</b> <font color="#AD7FA8"><b>warning: </b></font>implicit declaration of function ‘<b>PyModule_Create</b>’; did you mean ‘<b>PyModule_Check</b>’? [<font color="#AD7FA8"><b>-Wimplicit-function-declaration</b></font>]
+     module = <font color="#AD7FA8"><b>PyModule_Create</b></font>(&amp;this_module);
+              <font color="#AD7FA8"><b>^~~~~~~~~~~~~~~</b></font>
+              <font color="#4E9A06">PyModule_Check</font>
+<b>sysv_ipc_module.c:771:12:</b> <font color="#AD7FA8"><b>warning: </b></font>assignment to ‘<b>PyObject *</b>’ {aka ‘<b>struct _object *</b>’} from ‘<b>int</b>’ makes pointer from integer without a cast [<font color="#AD7FA8"><b>-Wint-conversion</b></font>]
+     module <font color="#AD7FA8"><b>=</b></font> PyModule_Create(&amp;this_module);
+            <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:865:12:</b> <font color="#AD7FA8"><b>warning: </b></font>‘<b>return</b>’ with a value, in function returning void
+     return <font color="#AD7FA8"><b>module</b></font>;
+            <font color="#AD7FA8"><b>^~~~~~</b></font>
+<b>sysv_ipc_module.c:763:1:</b> <font color="#34E2E2"><b>note: </b></font>declared here
+ <font color="#34E2E2"><b>PyInit_sysv_ipc</b></font>(void) {
+ <font color="#34E2E2"><b>^~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:868:12:</b> <font color="#AD7FA8"><b>warning: </b></font>‘<b>return</b>’ with a value, in function returning void
+     return <font color="#AD7FA8"><b>NULL</b></font>;
+            <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:763:1:</b> <font color="#34E2E2"><b>note: </b></font>declared here
+ <font color="#34E2E2"><b>PyInit_sysv_ipc</b></font>(void) {
+ <font color="#34E2E2"><b>^~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:</b> At top level:
+<b>sysv_ipc_module.c:749:27:</b> <font color="#EF2929"><b>error: </b></font>storage size of ‘<b>this_module</b>’ isn’t known
+ static struct PyModuleDef <font color="#EF2929"><b>this_module</b></font> = {
+                           <font color="#EF2929"><b>^~~~~~~~~~~</b></font>
+error: command &apos;gcc&apos; failed with exit status 1
+[dubi@localhost sysv_ipc]$ gcc --version
+gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-20)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[dubi@localhost sysv_ipc]$ sudo yum install python2-devel
+마지막 메타자료 만료확인(1:00:36 이전): 2023년 07월 18일 (화) 오전 11시 02분 58초.
+꾸러미 python2-devel-2.7.18-12.module_el8+299+aa6e9afa.x86_64가 이미 설치되어 있습니다.
+종속성이 해결되었습니다.
+처리가 필요하지 않습니다.
+완료되었습니다!
+[dubi@localhost sysv_ipc]$ python2 setup.py install --user
+running install
+running bdist_egg
+running egg_info
+writing sysv_ipc.egg-info/PKG-INFO
+writing top-level names to sysv_ipc.egg-info/top_level.txt
+writing dependency_links to sysv_ipc.egg-info/dependency_links.txt
+reading manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+reading manifest template &apos;MANIFEST.in&apos;
+warning: no previously-included files matching &apos;*.pyc&apos; found anywhere in distribution
+warning: no previously-included files matching &apos;*.o&apos; found anywhere in distribution
+writing manifest file &apos;sysv_ipc.egg-info/SOURCES.txt&apos;
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building &apos;sysv_ipc&apos; extension
+gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python2.7 -c sysv_ipc_module.c -o build/temp.linux-x86_64-2.7/sysv_ipc_module.o
+<b>sysv_ipc_module.c:514:5:</b> <font color="#AD7FA8"><b>warning: </b></font>initialization of ‘<b>Py_ssize_t (*)(PyObject *, Py_ssize_t,  void **)</b>’ {aka ‘<b>long int (*)(struct _object *, long int,  void **)</b><b>’} from incompa</b>tible pointer type ‘<b>int (*)(PyObject *, Py_buffer *, int)</b>’ {aka ‘<b>int (*)(struct _object *, struct bufferinfo *, int)</b>’} [<font color="#AD7FA8"><b>-Wincompatible-pointer-types</b></font>]
+     <font color="#AD7FA8"><b>(</b></font>getbufferproc)shm_get_buffer,
+     <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:514:5:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>SharedMemory_as_buffer.bf_getreadbuffer</b>’)
+<b>sysv_ipc_module.c:515:5:</b> <font color="#AD7FA8"><b>warning: </b></font>initialization of ‘<b>Py_ssize_t (*)(PyObject *, Py_ssize_t,  void **)</b>’ {aka ‘<b>long int (*)(struct _object *, long int,  void **)</b><b>’} from incompa</b>tible pointer type ‘<b>void (*)(PyObject *, Py_buffer *)</b>’ {aka ‘<b>void (*)(struct _object *, struct bufferinfo *)</b>’} [<font color="#AD7FA8"><b>-Wincompatible-pointer-types</b></font>]
+     <font color="#AD7FA8"><b>(</b></font>releasebufferproc)NULL,
+     <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:515:5:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>SharedMemory_as_buffer.bf_getwritebuffer</b>’)
+<b>sysv_ipc_module.c:749:15:</b> <font color="#EF2929"><b>error: </b></font>variable ‘<b>this_module</b>’ has initializer but incomplete type
+ static struct <font color="#EF2929"><b>PyModuleDef</b></font> this_module = {
+               <font color="#EF2929"><b>^~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:750:2:</b> <font color="#EF2929"><b>error: </b></font>‘<b>PyModuleDef_HEAD_INIT</b>’ undeclared here (not in a function); did you mean ‘<b>PyObject_HEAD_INIT</b>’?
+  <font color="#EF2929"><b>PyModuleDef_HEAD_INIT</b></font>,  // m_base
+  <font color="#EF2929"><b>^~~~~~~~~~~~~~~~~~~~~</b></font>
+  <font color="#4E9A06">PyObject_HEAD_INIT</font>
+<b>sysv_ipc_module.c:750:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+<b>sysv_ipc_module.c:750:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:751:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>&quot;sysv_ipc&quot;</b></font>,             // m_name
+  <font color="#AD7FA8"><b>^~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:751:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:752:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>&quot;SYSV IPC module&quot;</b></font>,      // m_doc
+  <font color="#AD7FA8"><b>^~~~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:752:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:753:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>-</b></font>1,                     // m_size (space allocated for module globals)
+  <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:753:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:754:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>module_methods</b></font>,         // m_methods
+  <font color="#AD7FA8"><b>^~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:754:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:755:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_reload
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:755:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:756:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_traverse
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:756:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:757:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>,                   // m_clear
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:757:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:758:2:</b> <font color="#AD7FA8"><b>warning: </b></font>excess elements in struct initializer
+  <font color="#AD7FA8"><b>NULL</b></font>                    // m_free
+  <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:758:2:</b> <font color="#34E2E2"><b>note: </b></font>(near initialization for ‘<b>this_module</b>’)
+<b>sysv_ipc_module.c:</b> In function ‘<b>PyInit_sysv_ipc</b>’:
+<b>sysv_ipc_module.c:771:14:</b> <font color="#AD7FA8"><b>warning: </b></font>implicit declaration of function ‘<b>PyModule_Create</b>’; did you mean ‘<b>PyModule_Check</b>’? [<font color="#AD7FA8"><b>-Wimplicit-function-declaration</b></font>]
+     module = <font color="#AD7FA8"><b>PyModule_Create</b></font>(&amp;this_module);
+              <font color="#AD7FA8"><b>^~~~~~~~~~~~~~~</b></font>
+              <font color="#4E9A06">PyModule_Check</font>
+<b>sysv_ipc_module.c:771:12:</b> <font color="#AD7FA8"><b>warning: </b></font>assignment to ‘<b>PyObject *</b>’ {aka ‘<b>struct _object *</b>’} from ‘<b>int</b>’ makes pointer from integer without a cast [<font color="#AD7FA8"><b>-Wint-conversion</b></font>]
+     module <font color="#AD7FA8"><b>=</b></font> PyModule_Create(&amp;this_module);
+            <font color="#AD7FA8"><b>^</b></font>
+<b>sysv_ipc_module.c:865:12:</b> <font color="#AD7FA8"><b>warning: </b></font>‘<b>return</b>’ with a value, in function returning void
+     return <font color="#AD7FA8"><b>module</b></font>;
+            <font color="#AD7FA8"><b>^~~~~~</b></font>
+<b>sysv_ipc_module.c:763:1:</b> <font color="#34E2E2"><b>note: </b></font>declared here
+ <font color="#34E2E2"><b>PyInit_sysv_ipc</b></font>(void) {
+ <font color="#34E2E2"><b>^~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:868:12:</b> <font color="#AD7FA8"><b>warning: </b></font>‘<b>return</b>’ with a value, in function returning void
+     return <font color="#AD7FA8"><b>NULL</b></font>;
+            <font color="#AD7FA8"><b>^~~~</b></font>
+<b>sysv_ipc_module.c:763:1:</b> <font color="#34E2E2"><b>note: </b></font>declared here
+ <font color="#34E2E2"><b>PyInit_sysv_ipc</b></font>(void) {
+ <font color="#34E2E2"><b>^~~~~~~~~~~~~~~</b></font>
+<b>sysv_ipc_module.c:</b> At top level:
+<b>sysv_ipc_module.c:749:27:</b> <font color="#EF2929"><b>error: </b></font>storage size of ‘<b>this_module</b>’ isn’t known
+ static struct PyModuleDef <font color="#EF2929"><b>this_module</b></font> = {
+                           <font color="#EF2929"><b>^~~~~~~~~~~</b></font>
+error: command &apos;gcc&apos; failed with exit status 1
+[dubi@localhost sysv_ipc]$
+</pre>

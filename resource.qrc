@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/:/resources">
+        <file>Res/icon1.png</file>
+        <file>Res/icon2.png</file>
+        <file>Res/icon3.png</file>
+        <file>Res/icon4.png</file>
+    </qresource>
+</RCC>

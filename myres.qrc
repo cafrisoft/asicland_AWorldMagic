@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>Res/icon1.png</file>
+        <file>Res/icon2.png</file>
+        <file>Res/icon3.png</file>
+        <file>Res/icon4.png</file>
+        <file>icon1.png</file>
+        <file>Res/Config.png</file>
+        <file>Res/File.png</file>
+        <file>Res/Play.png</file>
+        <file>Res/export.png</file>
+        <file>Res/import.png</file>
+        <file>Res/Expand.png</file>
+        <file>Res/tool-toggle_offpage.png</file>
+        <file>Res/tool-select.png</file>
+        <file>Res/tool-interface.png</file>
+        <file>Res/tool-interconnection.png</file>
+        <file>Res/tool-drafting.png</file>
+        <file>Res/diagram-add-column.png</file>
+        <file>Res/balloon.png</file>
+        <file>Res/opened-folder.png</file>
+        <file>Res/arrowRight.png</file>
+        <file>Res/remove.png</file>
+        <file>Res/add.png</file>
+        <file>Res/checkMark.png</file>
+        <file>Res/hw-component-edit.png</file>
+        <file>Res/refresh.png</file>
+        <file>Res/edit.png</file>
+        <file>Res/view-zoom_out.png</file>
+        <file>Res/view-zoom_original.png</file>
+        <file>Res/view-zoom_in.png</file>
+        <file>Res/view-fit_best.png</file>
+        <file>Res/delete.png</file>
+        <file>Res/connect.png</file>
+        <file>Res/splash.png</file>
+        <file>Res/VHDLGenerator.png</file>
+        <file>Res/verilogGenerator.png</file>
+        <file>Res/error.png</file>
+        <file>Res/info.png</file>
+        <file>Res/warning.png</file>
+        <file>Res/clear.png</file>
+        <file>Res/tcl.png</file>
+        <file>Res/asicland_logo.png</file>
+        <file>Res/UpdateLog.txt</file>
+        <file>Res/Waiting.png</file>
+    </qresource>
+</RCC>

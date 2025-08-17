@@ -1,0 +1,38 @@
+#include "xmlgenerator.h"
+#include <QDir>
+//#include <QCheckBox>
+//#include <QMessageBox>
+
+
+XmlGenerator::XmlGenerator()
+{
+
+}
+
+void XmlGenerator::SetEnv(/*QString prjPath, QString Scrpit, QString DestPath*/)
+{
+    // Get the home directory of the current user
+    QString homeDir = QDir::homePath();
+    setprjPath = homeDir + "/AMagic";
+    genScriptPath = homeDir + "/AMagic/bin/awsh";
+}
+
+void XmlGenerator::SetScriptFunciton(QString function)
+{
+    if(function == "io.xml")
+    {
+       genScriptWorkingPath = setprjPath + "/script/";
+       genScriptWorkingPath += "hw_design_gen_by_tony";
+    }
+
+
+    QString homeDir = QDir::homePath();
+    setprjPath = homeDir + "/AMagic";
+    genScriptPath = homeDir + "/AMagic/bin/awsh";
+    genScriptWorkingPath = homeDir + "/AMagic/script/top_port_create_n_connect_gen_by_tony";
+}
+
+void XmlGenerator::OnPythonScriptRun()
+{
+
+}

@@ -1,0 +1,25 @@
+#ifndef XMLGENERATOR_H
+#define XMLGENERATOR_H
+
+#include <QObject>
+#include <QString>
+
+class XmlGenerator
+{
+public:
+    explicit XmlGenerator();
+
+//signals:
+protected:
+    QString setprjPath;
+    QString genScriptPath;
+    QString genScriptWorkingPath;
+
+public:
+    void SetEnv(/*QString prjPath, QString Scrpit, QString DestPath*/);
+    void OnPythonScriptRun();
+    void SetScriptFunciton(QString function);
+
+};
+
+#endif // XMLGENERATOR_H
