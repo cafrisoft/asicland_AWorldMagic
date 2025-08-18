@@ -82,4 +82,12 @@
       <Filter>AWorldMagic</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\BaseLayOut.pro">
+      <Filter>AWorldMagic</Filter>
+    </None>
+    <None Include="..\..\..\.gitignore">
+      <Filter>AWorldMagic</Filter>
+    </None>
+  </ItemGroup>
 </Project>
