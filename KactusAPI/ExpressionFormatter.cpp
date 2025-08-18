@@ -64,8 +64,8 @@ QString ExpressionFormatter::formatReferringExpression(QString const& expression
 
     QString formattedExpression = expression;
 
-//    for (QString const& valueID : expression.split(NON_ALPHA_CHARACTERS, Qt::SkipEmptyParts))
-    for (QString const& valueID : expression.split(NON_ALPHA_CHARACTERS, QString::SkipEmptyParts))     //. not surported Qt5.11. 부터 지원
+    for (QString const& valueID : expression.split(NON_ALPHA_CHARACTERS, Qt::SkipEmptyParts))
+    //for (QString const& valueID : expression.split(NON_ALPHA_CHARACTERS, QString::SkipEmptyParts))     //. not surported Qt5.11. 부터 지원
     {
         if (parameterFinder_->hasId(valueID))
         {

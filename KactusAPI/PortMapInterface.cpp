@@ -9,6 +9,8 @@
 // Interface for editing port maps.
 //-----------------------------------------------------------------------------
 
+#include <GlobalBuildOptions.h>
+
 //#include <PortMapInterface.h>
 #include "PortMapInterface.h"
 

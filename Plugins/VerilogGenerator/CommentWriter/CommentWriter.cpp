@@ -43,8 +43,8 @@ void CommentWriter::write(QTextStream& output) const
 
     QString indent = QString(" ").repeated(indentSize_);
 
-//    for (QString line : comment_.split("\n", Qt::KeepEmptyParts))
-    for (QString line : comment_.split("\n", QString::SplitBehavior::KeepEmptyParts))
+    for (QString line : comment_.split("\n", Qt::KeepEmptyParts))
+//    for (QString line : comment_.split("\n", QString::SplitBehavior::KeepEmptyParts))
     {
         do
         {
@@ -59,7 +59,7 @@ void CommentWriter::write(QTextStream& output) const
                 lineEnd = line.indexOf(" ", lineLength_);
             }
             
-            output << indent << "// " << line.left(lineEnd) << endl;
+            output << indent << "// " << line.left(lineEnd) << Qt::endl;
             line = line.remove(0, lineEnd + 1);
         } while (line.length() > 0);
     }

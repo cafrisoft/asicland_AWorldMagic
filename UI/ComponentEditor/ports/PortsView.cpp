@@ -28,8 +28,8 @@ busInterface_(busInterface)
 {
     verticalHeader()->show();
     verticalHeader()->setMaximumWidth(300);
-//    verticalHeader()->setMinimumWidth(horizontalHeader()->fontMetrics().horizontalAdvance(tr("Name"))*2);
-    verticalHeader()->setMinimumWidth(horizontalHeader()->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
+    verticalHeader()->setMinimumWidth(horizontalHeader()->fontMetrics().horizontalAdvance(tr("Name"))*2);
+//    verticalHeader()->setMinimumWidth(horizontalHeader()->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
     verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
 
     connect(&createBus_, SIGNAL(triggered()), this, SLOT(onCreateNewBus()), Qt::UniqueConnection);

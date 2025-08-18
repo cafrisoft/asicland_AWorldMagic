@@ -12,7 +12,11 @@
 #ifndef COMPONENTEDITORTREEMODEL_H
 #define COMPONENTEDITORTREEMODEL_H
 
+#ifdef _WIN32
+#include <UI/ComponentEditor/treeStructure/componenteditorrootitem.h>
+#else
 #include "componenteditorrootitem.h"
+#endif
 
 #include <QAbstractItemModel>
 #include <QWidget>

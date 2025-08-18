@@ -40,7 +40,7 @@ void VerilogTopDefaultWriter::write(QTextStream& output) const
         return;
     }
 
-//    output << "    assign " << mPort_->port_->name() << " = " << mPort_->defaultValue_ << ";" << Qt::endl;
-    output << "    assign " << mPort_->port_->name() << " = " << mPort_->defaultValue_ << ";" << endl;    //. not surported Qt.5.14 부터 지원
+    output << "    assign " << mPort_->port_->name() << " = " << mPort_->defaultValue_ << ";" << Qt::endl;
+//    output << "    assign " << mPort_->port_->name() << " = " << mPort_->defaultValue_ << ";" << Qt::endl;    //. not surported Qt.5.14 부터 지원
 
 }

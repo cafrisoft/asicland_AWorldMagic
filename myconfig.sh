@@ -1,0 +1,1 @@
+export  PATH=/home/hthwang/OpenSource/QT/6.2.4/install/bin:/usr/include/tcl8.6/:$PATH

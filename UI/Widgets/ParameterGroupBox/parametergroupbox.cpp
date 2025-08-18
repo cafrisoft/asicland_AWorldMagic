@@ -51,8 +51,8 @@ parameterInterface_()
 
     view_->verticalHeader()->show();
     view_->verticalHeader()->setMaximumWidth(300);
-//    view_->verticalHeader()->setMinimumWidth(view_->horizontalHeader()->fontMetrics().horizontalAdvance(tr("Name"))*2);
-    view_->verticalHeader()->setMinimumWidth(view_->horizontalHeader()->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
+    view_->verticalHeader()->setMinimumWidth(view_->horizontalHeader()->fontMetrics().horizontalAdvance(tr("Name"))*2);
+//    view_->verticalHeader()->setMinimumWidth(view_->horizontalHeader()->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
     view_->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
 
     QSharedPointer<IPXactSystemVerilogParser> expressionParser(new IPXactSystemVerilogParser(parameterFinder));

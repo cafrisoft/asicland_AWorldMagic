@@ -9,6 +9,8 @@
 // The editor to edit/packet IP-Xact components.
 //-----------------------------------------------------------------------------
 
+#include <GlobalBuildOptions.h>
+
 #include "componenteditor.h"
 
 #include <KactusAPI/LibraryInterface.h>

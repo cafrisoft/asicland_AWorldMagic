@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include <QApplication>
 #include <QAction>
 #include <QKeySequence>
@@ -2068,6 +2070,8 @@ bool MainWindow::OutputLogNoticeMessage(QByteArray result)
     for (const QString &line : outputList) {
         emit noticeMessage(line);
     }
+
+    return true;
 }
 
 bool MainWindow::OutputLogErrorMessage(QByteArray result)
@@ -2081,6 +2085,8 @@ bool MainWindow::OutputLogErrorMessage(QByteArray result)
     for (const QString &line : outputList) {
         emit noticeMessage(line);
     }
+
+    return true;
 }
 
 //-----------------------------------------------------------------------------

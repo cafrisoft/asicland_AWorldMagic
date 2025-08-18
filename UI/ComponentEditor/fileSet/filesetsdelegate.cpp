@@ -79,8 +79,8 @@ void FileSetsDelegate::setEditorData(QWidget* editor, QModelIndex const& index) 
     {
         ListEditor* listEditor = qobject_cast<ListEditor*>(editor);
         Q_ASSERT(listEditor);
-//        QStringList groups = index.data(Qt::DisplayRole).toString().split(' ', Qt::SkipEmptyParts);
-        QStringList groups = index.data(Qt::DisplayRole).toString().split(' ', QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+        QStringList groups = index.data(Qt::DisplayRole).toString().split(' ', Qt::SkipEmptyParts);
+//        QStringList groups = index.data(Qt::DisplayRole).toString().split(' ', QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
         listEditor->setItems(groups);
     }
     else

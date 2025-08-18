@@ -155,8 +155,8 @@ void CreateIOWirePort::doDeleteRow() {
     }
 
         // 삭제해야 하는 행들을 역순으로 삭제 (앞에서부터 삭제하면 행의 인덱스가 바뀌기 때문)
-    QList<int> sortedRows = QList<int>::fromSet(rowsToDelete);
-    std::sort(sortedRows.begin(), sortedRows.end(), std::greater<int>());
+        QList<int> sortedRows(rowsToDelete.begin(), rowsToDelete.end());
+        std::sort(sortedRows.begin(), sortedRows.end(), std::greater<int>());
 
     for (int row : sortedRows) {
         table->removeRow(row);

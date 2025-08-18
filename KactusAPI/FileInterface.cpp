@@ -258,8 +258,8 @@ bool FileInterface::removeFile(std::string const& fileName)
 //-----------------------------------------------------------------------------
 void FileInterface::swapFiles(int const& firstIndex, int const& secondIndex)
 {
-//    files_->swapItemsAt(firstIndex, secondIndex);
-    files_->swap(firstIndex, secondIndex);     //. not surported Qt5.11. 부터 지원
+    files_->swapItemsAt(firstIndex, secondIndex);
+    //files_->swap(firstIndex, secondIndex);     //. not surported Qt5.11. 부터 지원
 }
 
 //-----------------------------------------------------------------------------

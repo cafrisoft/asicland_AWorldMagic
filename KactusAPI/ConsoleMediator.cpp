@@ -37,8 +37,8 @@ ConsoleMediator::~ConsoleMediator()
 void ConsoleMediator::showMessage(QString const& message) const
 {
     static QTextStream out(stdout); 
-//    out << message << Qt::endl;
-    out << message << endl;    //. not surported Qt.5.14 부터 지원
+    out << message << Qt::endl;
+    //out << message << endl;    //. not surported Qt.5.14 부터 지원
 }
 
 //-----------------------------------------------------------------------------
@@ -47,8 +47,8 @@ void ConsoleMediator::showMessage(QString const& message) const
 void ConsoleMediator::showError(QString const& error) const
 {
     static QTextStream err(stderr);
-//    err << error << Qt::endl;
-    err << error << endl;    //. not surported Qt.5.14 부터 지원
+    err << error << Qt::endl;
+    //err << error << endl;    //. not surported Qt.5.14 부터 지원
 }
 
 //-----------------------------------------------------------------------------

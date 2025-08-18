@@ -23,7 +23,7 @@
 
 #include <IPXACTmodels/ipxactmodels_global.h>
  
-#include <QDomDocument>
+#include <QtXml/QDomDocument>
 #include <QSharedPointer>
 #include <QStringList>
 #include <QList>

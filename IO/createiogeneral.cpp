@@ -162,22 +162,22 @@ QString CreateIOGeneral::MakeXML(QTableWidget *table)
     if(VendorValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "vendor 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(NameValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "version 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(Author.isEmpty())
     {
         QMessageBox::information(this, "General",  "author 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(VersionValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "name 정보가 없습니다.");
-        return false;
+        return "";
     }
 
     mgr.MakeGenXml(VendorValue, NameValue, VersionValue, DescriptionValue, Author);

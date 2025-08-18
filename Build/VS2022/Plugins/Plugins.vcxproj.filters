@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{8ae0e1c3-4c1a-4da3-a42b-6470ebb7016c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Common">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7016d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Common\PortSorter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7016e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Common\HDLParser">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7016f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\CppSourceAnalyzer">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\PluginSystem">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\PluginSystem\GeneratorPlugin">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator">
+      <UniqueIdentifier>{815654c6-095d-4478-8f80-d23fdafdfda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\CommentWriter">
+      <UniqueIdentifier>{3de3d043-6b9f-41c9-839b-c633d70579f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\common">
+      <UniqueIdentifier>{1121f6ed-a41e-4b55-8901-3a4725b3ecbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\ComponentInstanceVerilogWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\ComponentVerilogWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\ModelParameterVerilogWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\TextBodyWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogAssignmentWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogHeaderWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogInterconnectionWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb70179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogPortWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogWireWriter">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogGenerator\VerilogWriterFactory">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogImport">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogIncludeImport">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VerilogSourceAnalyzer">
+      <UniqueIdentifier>{9ae0e1c3-4c1a-4da3-a42b-6470ebb7017f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Global -->
+    <ClInclude Include="plugins_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    
+    <!-- Common Plugins -->
+    <ClInclude Include="..\..\..\Plugins\common\ConfigurationManager.h">
+      <Filter>Plugins\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\CSourceWriter.h">
+      <Filter>Plugins\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\LanguageHighlighter.h">
+      <Filter>Plugins\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PluginConfigurationManager.h">
+      <Filter>Plugins\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\SourceHighlightStyle.h">
+      <Filter>Plugins\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PortSorter\InterfaceDirectionNameSorter.h">
+      <Filter>Plugins\Common\PortSorter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PortSorter\PortSorter.h">
+      <Filter>Plugins\Common\PortSorter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\HDLCommandLineParser.h">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\HDLParserCommon.h">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaComponent.h">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaDesign.h">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaInstance.h">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClInclude>
+    
+    <!-- CppSourceAnalyzer -->
+    <ClInclude Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.h">
+      <Filter>Plugins\CppSourceAnalyzer</Filter>
+    </ClInclude>
+    
+    <!-- PluginSystem -->
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\IWriterFactory.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    
+    <!-- VerilogGenerator -->
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.h">
+      <Filter>Plugins\VerilogGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogSourceHighlight.h">
+      <Filter>Plugins\VerilogGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\Writer.h">
+      <Filter>Plugins\VerilogGenerator\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\WriterGroup.h">
+      <Filter>Plugins\VerilogGenerator\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\CommentWriter\CommentWriter.h">
+      <Filter>Plugins\VerilogGenerator\CommentWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter\ComponentInstanceVerilogWriter.h">
+      <Filter>Plugins\VerilogGenerator\ComponentInstanceVerilogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\ComponentVerilogWriter\ComponentVerilogWriter.h">
+      <Filter>Plugins\VerilogGenerator\ComponentVerilogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\ModelParameterVerilogWriter\ModelParameterVerilogWriter.h">
+      <Filter>Plugins\VerilogGenerator\ModelParameterVerilogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\TextBodyWriter\TextBodyWriter.h">
+      <Filter>Plugins\VerilogGenerator\TextBodyWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogAssignmentWriter\VerilogAssignmentWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogAssignmentWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogHeaderWriter\VerilogHeaderWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogHeaderWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogInterconnectionWriter\VerilogInterconnectionWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogInterconnectionWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogPortWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogTopDefaultWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWireWriter\VerilogWireWriter.h">
+      <Filter>Plugins\VerilogGenerator\VerilogWireWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogDocument.h">
+      <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogWriterFactory.h">
+      <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
+    </ClInclude>
+    
+    <!-- VerilogImport -->
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.h">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogParameterParser.h">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogPortParser.h">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.h">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClInclude>
+    
+    <!-- VerilogIncludeImport -->
+    <ClInclude Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h">
+      <Filter>Plugins\VerilogIncludeImport</Filter>
+    </ClInclude>
+    
+    <!-- VerilogSourceAnalyzer -->
+    <ClInclude Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h">
+      <Filter>Plugins\VerilogSourceAnalyzer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Common Plugins -->
+    <ClCompile Include="..\..\..\Plugins\common\ConfigurationManager.cpp">
+      <Filter>Plugins\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\CSourceWriter.cpp">
+      <Filter>Plugins\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\LanguageHighlighter.cpp">
+      <Filter>Plugins\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\PluginConfigurationManager.cpp">
+      <Filter>Plugins\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\SourceHighlightStyle.cpp">
+      <Filter>Plugins\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\PortSorter\InterfaceDirectionNameSorter.cpp">
+      <Filter>Plugins\Common\PortSorter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\HDLCommandLineParser.cpp">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaComponent.cpp">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaDesign.cpp">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaInstance.cpp">
+      <Filter>Plugins\Common\HDLParser</Filter>
+    </ClCompile>
+    
+    <!-- CppSourceAnalyzer -->
+    <ClCompile Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.cpp">
+      <Filter>Plugins\CppSourceAnalyzer</Filter>
+    </ClCompile>
+    
+    <!-- PluginSystem -->
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.cpp">
+      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    
+    <!-- VerilogGenerator -->
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.cpp">
+      <Filter>Plugins\VerilogGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogSourceHighlight.cpp">
+      <Filter>Plugins\VerilogGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\common\WriterGroup.cpp">
+      <Filter>Plugins\VerilogGenerator\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\CommentWriter\CommentWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\CommentWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter\ComponentInstanceVerilogWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\ComponentInstanceVerilogWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\ComponentVerilogWriter\ComponentVerilogWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\ComponentVerilogWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\ModelParameterVerilogWriter\ModelParameterVerilogWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\ModelParameterVerilogWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\TextBodyWriter\TextBodyWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\TextBodyWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogAssignmentWriter\VerilogAssignmentWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogAssignmentWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogHeaderWriter\VerilogHeaderWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogHeaderWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogInterconnectionWriter\VerilogInterconnectionWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogInterconnectionWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogPortWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogTopDefaultWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogWireWriter\VerilogWireWriter.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogWireWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogDocument.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogWriterFactory.cpp">
+      <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
+    </ClCompile>
+    
+    <!-- VerilogImport -->
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogImporter.cpp">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.cpp">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogParameterParser.cpp">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogPortParser.cpp">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.cpp">
+      <Filter>Plugins\VerilogImport</Filter>
+    </ClCompile>
+    
+    <!-- VerilogIncludeImport -->
+    <ClCompile Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.cpp">
+      <Filter>Plugins\VerilogIncludeImport</Filter>
+    </ClCompile>
+    
+    <!-- VerilogSourceAnalyzer -->
+    <ClCompile Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.cpp">
+      <Filter>Plugins\VerilogSourceAnalyzer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

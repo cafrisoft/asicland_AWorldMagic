@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{62d667e8-8624-41a8-bbaf-6856d02824cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets">
+      <UniqueIdentifier>{4e1f6cf5-0e70-4349-a0a2-b9ec2833aab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Basic">
+      <UniqueIdentifier>{5a1f6cf5-0e70-4349-a0a2-b9ec2833aab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Advanced">
+      <UniqueIdentifier>{6a1f6cf5-0e70-4349-a0a2-b9ec2833aab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\VLNV">
+      <UniqueIdentifier>{7a1f6cf5-0e70-4349-a0a2-b9ec2833aab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\TagEditor">
+      <UniqueIdentifier>{8a1f6cf5-0e70-4349-a0a2-b9ec2833aab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\ListManager">
+      <UniqueIdentifier>{9a1f6cf5-0e70-4349-a0a2-b9ec2833aaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\ParameterGroupBox">
+      <UniqueIdentifier>{aa1f6cf5-0e70-4349-a0a2-b9ec2833aabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\VLNVDialer">
+      <UniqueIdentifier>{ba1f6cf5-0e70-4349-a0a2-b9ec2833aabc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\TabDocument">
+      <UniqueIdentifier>{ca1f6cf5-0e70-4349-a0a2-b9ec2833aabd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\SnippetTextEdit">
+      <UniqueIdentifier>{da1f6cf5-0e70-4349-a0a2-b9ec2833aabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Project">
+      <UniqueIdentifier>{ea1f6cf5-0e70-4349-a0a2-b9ec2833aabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Project\ProjectSelectorWidget">
+      <UniqueIdentifier>{fa1f6cf5-0e70-4349-a0a2-b9ec2833aac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Project\ProjectSelectorWidget\ProjectPathSelector">
+      <UniqueIdentifier>{0b1f6cf5-0e70-4349-a0a2-b9ec2833aac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Project\ProjectSelectorWidget\ProjectPathEditor">
+      <UniqueIdentifier>{1b1f6cf5-0e70-4349-a0a2-b9ec2833aac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Project\ProjectEditor">
+      <UniqueIdentifier>{2b1f6cf5-0e70-4349-a0a2-b9ec2833aac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\ProgressWidget">
+      <UniqueIdentifier>{3b1f6cf5-0e70-4349-a0a2-b9ec2833aac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\LineEditEx">
+      <UniqueIdentifier>{4b1f6cf5-0e70-4349-a0a2-b9ec2833aac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Library">
+      <UniqueIdentifier>{5b1f6cf5-0e70-4349-a0a2-b9ec2833aac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Library\LibrarySelectorWidget">
+      <UniqueIdentifier>{6b1f6cf5-0e70-4349-a0a2-b9ec2833aac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Library\LibrarySelectorWidget\LibraryPathSelector">
+      <UniqueIdentifier>{7b1f6cf5-0e70-4349-a0a2-b9ec2833aac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Library\LibrarySelectorWidget\LibraryPathEditor">
+      <UniqueIdentifier>{8b1f6cf5-0e70-4349-a0a2-b9ec2833aac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\FileSelector">
+      <UniqueIdentifier>{9b1f6cf5-0e70-4349-a0a2-b9ec2833aaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\EnumCollectionEditor">
+      <UniqueIdentifier>{ab1f6cf5-0e70-4349-a0a2-b9ec2833aacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\DirectoryListSelector">
+      <UniqueIdentifier>{bb1f6cf5-0e70-4349-a0a2-b9ec2833aacc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Global -->
+    <ClInclude Include="ui_widgets_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    
+    <!-- Basic Widgets -->
+    <QtMoc Include="..\..\..\UI\Widgets\accessComboBox\accesscombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\booleanComboBox\booleancombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\busReferenceComboBox\BusReferenceComboBox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\colorBox\ColorBox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\componentPreviewBox\ComponentPreviewBox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\fileTypeSelector\filetypeselector.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\interfaceModeSelector\interfacemodeselector.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\interfaceSelector\interfaceselector.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\kactusAttributeEditor\KactusAttributeEditor.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\modWriteComboBox\modwritecombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\nameGroupBox\namegroupbox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\nameGroupEditor\namegroupeditor.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\readActionComboBox\readactioncombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\segmentComboBox\SegmentComboBox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\summaryLabel\summarylabel.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\testConstraintComboBox\testconstraintcombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\usageComboBox\usagecombobox.h">
+      <Filter>UI\Widgets\Basic</Filter>
+    </QtMoc>
+    
+    <!-- Advanced Widgets -->
+    <QtMoc Include="..\..\..\UI\Widgets\assistedLineEdit\AssistedLineEdit.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\assistedLineEdit\LineContentAssistWidget.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\assistedLineEdit\BasicLineContentMatcher.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\UI\Widgets\assistedLineEdit\ILineContentMatcher.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClInclude>
+    
+    <QtMoc Include="..\..\..\UI\Widgets\assistedTextEdit\AssistedTextEdit.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\assistedTextEdit\TextContentAssistWidget.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\assistedTextEdit\ToolTipHintWidget.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\UI\Widgets\assistedTextEdit\HighlightStyleDesc.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Widgets\assistedTextEdit\ITextContentMatcher.h">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClInclude>
+    
+    <!-- VLNV Widgets -->
+    <QtMoc Include="..\..\..\UI\Widgets\vlnvDisplayer\vlnvdisplayer.h">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\vlnvEditor\vlnveditor.h">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\vlnvEditor\VLNVDataTree.h">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\UI\Widgets\vlnvEditor\VLNVContentMatcher.h">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </ClInclude>
+    
+    <!-- Tag Editor -->
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagEditor.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagEditorContainer.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagSelector.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagSelectorContainer.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagLabel.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagDisplay.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagContainer.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\tagEditor\TagCompleterModel.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\UI\Widgets\tagEditor\FlowLayout.h">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClInclude>
+    
+    <!-- List Manager -->
+    <QtMoc Include="..\..\..\UI\Widgets\listManager\listmanager.h">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\listManager\listmanagermodel.h">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\listManager\dirlistmanager.h">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\listManager\dirlistmanagermodel.h">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\listManager\listeditor.h">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </QtMoc>
+    
+    <!-- Parameter Group Box -->
+    <QtMoc Include="..\..\..\UI\Widgets\ParameterGroupBox\parametergroupbox.h">
+      <Filter>UI\Widgets\ParameterGroupBox</Filter>
+    </QtMoc>
+    
+    <!-- VLNV Dialer -->
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\vlnvdialer.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\dialerwidget.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\filterwidget.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\typegroup.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\implementationgroup.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\hierarchygroup.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\VLNVDialer\firmnessgroup.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </QtMoc>
+    <ClInclude Include="..\..\..\UI\Widgets\VLNVDialer\FilterGroup.h">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClInclude>
+    
+    <!-- Tab Document -->
+    <QtMoc Include="..\..\..\UI\Widgets\TabDocument\TabDocument.h">
+      <Filter>UI\Widgets\TabDocument</Filter>
+    </QtMoc>
+    
+    <!-- Snippet Text Edit -->
+    <QtMoc Include="..\..\..\UI\Widgets\SnippetTextEdit\SnippetTextEdit.h">
+      <Filter>UI\Widgets\SnippetTextEdit</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\SnippetTextEdit\SnippetHighlighter.h">
+      <Filter>UI\Widgets\SnippetTextEdit</Filter>
+    </QtMoc>
+    
+    <!-- Project Widgets -->
+    <QtMoc Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectSelectorWidget.h">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectPathSelector\ProjectPathSelector.h">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget\ProjectPathSelector</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectPathEditor\ProjectPathEditor.h">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget\ProjectPathEditor</Filter>
+    </QtMoc>
+    
+    <QtMoc Include="..\..\..\UI\Widgets\ProjectEditor\ProjectEditor.h">
+      <Filter>UI\Widgets\Project\ProjectEditor</Filter>
+    </QtMoc>
+    
+    <!-- Progress Widget -->
+    <QtMoc Include="..\..\..\UI\Widgets\ProgressWidget\progresswidget.h">
+      <Filter>UI\Widgets\ProgressWidget</Filter>
+    </QtMoc>
+    
+    <!-- Line Edit Ex -->
+    <QtMoc Include="..\..\..\UI\Widgets\LineEditEx\LineEditEx.h">
+      <Filter>UI\Widgets\LineEditEx</Filter>
+    </QtMoc>
+    
+    <!-- Library Widgets -->
+    <QtMoc Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibrarySelectorWidget.h">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibraryPathSelector\librarypathselector.h">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget\LibraryPathSelector</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibraryPathEditor\librarypatheditor.h">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget\LibraryPathEditor</Filter>
+    </QtMoc>
+    
+    <!-- File Selector -->
+    <QtMoc Include="..\..\..\UI\Widgets\FileSelector\fileselector.h">
+      <Filter>UI\Widgets\FileSelector</Filter>
+    </QtMoc>
+    
+    <!-- Enum Collection Editor -->
+    <QtMoc Include="..\..\..\UI\Widgets\EnumCollectionEditor\EnumCollectionEditor.h">
+      <Filter>UI\Widgets\EnumCollectionEditor</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Widgets\EnumCollectionEditor\EnumerationEditor.h">
+      <Filter>UI\Widgets\EnumCollectionEditor</Filter>
+    </QtMoc>
+    
+    <!-- Directory List Selector -->
+    <QtMoc Include="..\..\..\UI\Widgets\DirectoryListSelector\DirectoryListSelector.h">
+      <Filter>UI\Widgets\DirectoryListSelector</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Basic Widgets -->
+    <ClCompile Include="..\..\..\UI\Widgets\accessComboBox\accesscombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\booleanComboBox\booleancombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\busReferenceComboBox\BusReferenceComboBox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\colorBox\ColorBox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\componentPreviewBox\ComponentPreviewBox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\fileTypeSelector\filetypeselector.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\interfaceModeSelector\interfacemodeselector.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\interfaceSelector\interfaceselector.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\kactusAttributeEditor\KactusAttributeEditor.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\modWriteComboBox\modwritecombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\nameGroupBox\namegroupbox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\nameGroupEditor\namegroupeditor.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\readActionComboBox\readactioncombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\segmentComboBox\SegmentComboBox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\summaryLabel\summarylabel.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\testConstraintComboBox\testconstraintcombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\usageComboBox\usagecombobox.cpp">
+      <Filter>UI\Widgets\Basic</Filter>
+    </ClCompile>
+    
+    <!-- Advanced Widgets -->
+    <ClCompile Include="..\..\..\UI\Widgets\assistedLineEdit\AssistedLineEdit.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\assistedLineEdit\LineContentAssistWidget.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\assistedLineEdit\BasicLineContentMatcher.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    
+    <ClCompile Include="..\..\..\UI\Widgets\assistedTextEdit\AssistedTextEdit.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\assistedTextEdit\TextContentAssistWidget.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\assistedTextEdit\ToolTipHintWidget.cpp">
+      <Filter>UI\Widgets\Advanced</Filter>
+    </ClCompile>
+    
+    <!-- VLNV Widgets -->
+    <ClCompile Include="..\..\..\UI\Widgets\vlnvDisplayer\vlnvdisplayer.cpp">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\vlnvEditor\vlnveditor.cpp">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\vlnvEditor\VLNVDataTree.cpp">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\vlnvEditor\VLNVContentMatcher.cpp">
+      <Filter>UI\Widgets\VLNV</Filter>
+    </ClCompile>
+    
+    <!-- Tag Editor -->
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagEditor.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagEditorContainer.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagSelector.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagSelectorContainer.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagLabel.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagDisplay.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagContainer.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\TagCompleterModel.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\tagEditor\FlowLayout.cpp">
+      <Filter>UI\Widgets\TagEditor</Filter>
+    </ClCompile>
+    
+    <!-- List Manager -->
+    <ClCompile Include="..\..\..\UI\Widgets\listManager\listmanager.cpp">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\listManager\listmanagermodel.cpp">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\listManager\dirlistmanager.cpp">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\listManager\dirlistmanagermodel.cpp">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\listManager\listeditor.cpp">
+      <Filter>UI\Widgets\ListManager</Filter>
+    </ClCompile>
+    
+    <!-- Parameter Group Box -->
+    <ClCompile Include="..\..\..\UI\Widgets\ParameterGroupBox\parametergroupbox.cpp">
+      <Filter>UI\Widgets\ParameterGroupBox</Filter>
+    </ClCompile>
+    
+    <!-- VLNV Dialer -->
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\vlnvdialer.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\dialerwidget.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\filterwidget.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\typegroup.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\implementationgroup.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\hierarchygroup.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\firmnessgroup.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\VLNVDialer\FilterGroup.cpp">
+      <Filter>UI\Widgets\VLNVDialer</Filter>
+    </ClCompile>
+    
+    <!-- Tab Document -->
+    <ClCompile Include="..\..\..\UI\Widgets\TabDocument\TabDocument.cpp">
+      <Filter>UI\Widgets\TabDocument</Filter>
+    </ClCompile>
+    
+    <!-- Snippet Text Edit -->
+    <ClCompile Include="..\..\..\UI\Widgets\SnippetTextEdit\SnippetTextEdit.cpp">
+      <Filter>UI\Widgets\SnippetTextEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\SnippetTextEdit\SnippetHighlighter.cpp">
+      <Filter>UI\Widgets\SnippetTextEdit</Filter>
+    </ClCompile>
+    
+    <!-- Project Widgets -->
+    <ClCompile Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectSelectorWidget.cpp">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectPathSelector\ProjectPathSelector.cpp">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget\ProjectPathSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\ProjectSelectorWidget\ProjectPathEditor\ProjectPathEditor.cpp">
+      <Filter>UI\Widgets\Project\ProjectSelectorWidget\ProjectPathEditor</Filter>
+    </ClCompile>
+    
+    <ClCompile Include="..\..\..\UI\Widgets\ProjectEditor\ProjectEditor.cpp">
+      <Filter>UI\Widgets\Project\ProjectEditor</Filter>
+    </ClCompile>
+    
+    <!-- Progress Widget -->
+    <ClCompile Include="..\..\..\UI\Widgets\ProgressWidget\progresswidget.cpp">
+      <Filter>UI\Widgets\ProgressWidget</Filter>
+    </ClCompile>
+    
+    <!-- Line Edit Ex -->
+    <ClCompile Include="..\..\..\UI\Widgets\LineEditEx\LineEditEx.cpp">
+      <Filter>UI\Widgets\LineEditEx</Filter>
+    </ClCompile>
+    
+    <!-- Library Widgets -->
+    <ClCompile Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibrarySelectorWidget.cpp">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibraryPathSelector\librarypathselector.cpp">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget\LibraryPathSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\LibrarySelectorWidget\LibraryPathEditor\librarypatheditor.cpp">
+      <Filter>UI\Widgets\Library\LibrarySelectorWidget\LibraryPathEditor</Filter>
+    </ClCompile>
+    
+    <!-- File Selector -->
+    <ClCompile Include="..\..\..\UI\Widgets\FileSelector\fileselector.cpp">
+      <Filter>UI\Widgets\FileSelector</Filter>
+    </ClCompile>
+    
+    <!-- Enum Collection Editor -->
+    <ClCompile Include="..\..\..\UI\Widgets\EnumCollectionEditor\EnumCollectionEditor.cpp">
+      <Filter>UI\Widgets\EnumCollectionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Widgets\EnumCollectionEditor\EnumerationEditor.cpp">
+      <Filter>UI\Widgets\EnumCollectionEditor</Filter>
+    </ClCompile>
+    
+    <!-- Directory List Selector -->
+    <ClCompile Include="..\..\..\UI\Widgets\DirectoryListSelector\DirectoryListSelector.cpp">
+      <Filter>UI\Widgets\DirectoryListSelector</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

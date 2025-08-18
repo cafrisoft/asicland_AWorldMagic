@@ -75,7 +75,7 @@ void EnumCollectionEditor::onExclusiveItemClicked(bool newState)
 {
     if (newState == true)
     {
-        QCheckBox* senderBox;
+        QCheckBox* senderBox = NULL;
         QObject* senderObject = sender();
         if (senderObject)
         {

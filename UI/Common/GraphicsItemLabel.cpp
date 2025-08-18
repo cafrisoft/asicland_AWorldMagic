@@ -39,8 +39,8 @@ void GraphicsItemLabel::setText(QString const& newText)
     textLabel_->setText(newText);
 
     QFontMetrics fontMetric(textLabel_->font());
-//    qreal newWidth = fontMetric.horizontalAdvance(newText);
-    qreal newWidth = fontMetric.width(newText);     //. not surported Qt5.11. 부터 지원
+    qreal newWidth = fontMetric.horizontalAdvance(newText);
+//    qreal newWidth = fontMetric.width(newText);     //. not surported Qt5.11. 부터 지원
     setMaximumWidth(newWidth + 10);
 
     updateLabelGeometry();

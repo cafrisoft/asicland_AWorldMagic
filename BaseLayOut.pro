@@ -81,9 +81,9 @@ DEFINES += PROJECT_PARSELIBRARY_ENABLE_20240125=0                               
 DEFINES += PLUGIN_TOOLS_SUPPORT_20240905=0                                           # 외부 플러그인 사용 여부
 
 LIBS += -lrt
-LIBS += -L/usr/lib64 -ltcl8.5
+LIBS += -L/usr/lib64 -ltcl8.6
 
-INCLUDEPATH += /usr/include/tcl8.5
+INCLUDEPATH += /usr/include/tcl8.6
 
 SOURCES += \
     Editor/awmedit.cpp \

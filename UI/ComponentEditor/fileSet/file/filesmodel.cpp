@@ -267,8 +267,8 @@ bool FilesModel::setData(QModelIndex const& index, const QVariant& value, int ro
         else if (index.column() == FileColumns::TYPES_COLUMN)
         {
             QString str = value.toString();
-//            QStringList fileTypes = str.split("; ", Qt::SkipEmptyParts);
-            QStringList fileTypes = str.split("; ", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+            QStringList fileTypes = str.split("; ", Qt::SkipEmptyParts);
+//            QStringList fileTypes = str.split("; ", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 
             std::vector<std::string> newFileTypes;
             for (auto singleType : fileTypes)

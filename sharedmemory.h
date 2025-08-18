@@ -12,11 +12,17 @@ using namespace std;
 #include <string>
 #include <cstring>
 #include <fcntl.h>
+#ifdef _WIN32
+
+#else
 #include <sys/mman.h>
 #include <semaphore.h>
 #include <unistd.h>
 #include <sys/mman.h>
+#endif
+
 #include <sys/stat.h>        /* For mode constants */
+
 #include <fcntl.h>
 
 class SharedMemory

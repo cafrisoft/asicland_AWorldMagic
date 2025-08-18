@@ -96,8 +96,8 @@ void PhysicalPortMappingTableView::dropEvent(QDropEvent* event)
 	}
 
 	// get the ports that were selected
-//	QStringList dropped = mimeText.split(QString(";"), Qt::SkipEmptyParts);
-    QStringList dropped = mimeText.split(QString(";"), QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+	QStringList dropped = mimeText.split(QString(";"), Qt::SkipEmptyParts);
+//    QStringList dropped = mimeText.split(QString(";"), QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 
 	// if the item to drop is from this port list view
 	if (source == this)

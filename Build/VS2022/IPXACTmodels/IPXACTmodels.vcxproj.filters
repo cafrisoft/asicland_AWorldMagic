@@ -1,0 +1,1609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="IPXACTmodels">
+      <UniqueIdentifier>{b0da161d-f338-473b-ae06-4c8d9dc4366f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\common">
+      <UniqueIdentifier>{a30cbaa9-462b-4be5-a9d0-ad2d8d97ae71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\common\validators">
+      <UniqueIdentifier>{706b4e38-a323-4688-8d40-9b06ee4cfae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\Component">
+      <UniqueIdentifier>{a6325465-b8d1-4df4-9b2a-9ebbd857cf26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\Component\validators">
+      <UniqueIdentifier>{6602a1a5-cba2-4238-87aa-b141a1f17666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\BusDefinition">
+      <UniqueIdentifier>{d5c93b93-9cc0-4b42-b2e3-b0f21c44abe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\BusDefinition\validators">
+      <UniqueIdentifier>{53425864-f94b-43e0-be89-3f2d7147e004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\AbstractionDefinition">
+      <UniqueIdentifier>{35b50dda-66ed-45ea-92ec-f8941f7d0eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\AbstractionDefinition\validators">
+      <UniqueIdentifier>{d5fc8439-40a9-4fe2-a993-fadb29a4948b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\AAAAA">
+      <UniqueIdentifier>{b6001f5b-e480-43e5-9e20-32c44bd769f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\utilities">
+      <UniqueIdentifier>{e95e78eb-8968-49aa-9bed-4348bd4e2c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\kactusExtensions">
+      <UniqueIdentifier>{3bb07cb3-fcc9-48f0-bc64-8d249ad78c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\kactusExtensions\validators">
+      <UniqueIdentifier>{15f11c1b-1cca-49a8-87a5-400c86c9829b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\Design">
+      <UniqueIdentifier>{77bc3b46-6ff4-4b00-b0b2-255c3767219f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\Design\validator">
+      <UniqueIdentifier>{4906971d-748c-4272-94eb-bc199e2c5153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\designConfiguration">
+      <UniqueIdentifier>{89dd46ec-9b03-4a09-b000-6f4284b45015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\designConfiguration\validators">
+      <UniqueIdentifier>{179f6ea2-94fc-4e98-9def-0ee626cb9d9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ipxactmodels_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Parameter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\PartSelect.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\PresenceTypes.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Protocol.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Qualifier.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Range.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\TagData.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\TimingConstraint.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\TransactionalTypes.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Vector.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\VendorExtension.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\VLNV.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\AccessTypes.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Array.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Assertion.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\BooleanValue.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\BuildModel.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\CellSpecification.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\ClockUnit.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\CommonItemsReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\CommonItemsWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\ConfigurableElementValue.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\ConfigurableVLNVReference.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\DirectionTypes.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Document.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\DocumentReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\DocumentWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Enumeration.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\Extendable.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\FileBuilder.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\FileBuilderReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\FileBuilderWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\FileTypes.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\GenericVendorExtension.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\ModuleParameter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\NameGroup.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\NameValuePair.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\CellSpecificationValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\ParameterValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\ProtocolValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\TimingConstraintValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\ValueFormatter.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\common\validators\AssertionValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\AbstractionTypeValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\AddressBlockValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\AddressSpaceValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\BusInterfaceValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\ChannelValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\ChoiceValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\ComponentGeneratorValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\ComponentValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\CPUValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\EnumeratedValueValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\FieldValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\FileSetValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\FileValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\IndirectInterfaceValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\InstantiationsValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\MemoryBlockValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\MemoryMapBaseValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\MemoryMapValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\MemoryReserve.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\OtherClockDriverValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\PortMapValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\PortTypeValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\PortValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\RegisterBaseValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\RegisterFileValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\RegisterValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\RemapStateValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\SubspaceMapValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\validators\ViewValidator.h">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ResetType.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Segment.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\SlaveInterface.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\SubSpaceMap.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\SubspaceMapReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\SubSpaceMapWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Transactional.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\TransparentBridge.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\View.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Wire.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\WireTypeDef.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\WriteValueConstraint.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AbstractionType.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressBlock.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressBlockReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressBlockWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressSpace.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressSpaceReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AddressSpaceWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\AlternateRegister.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\BuildCommand.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\BusInterface.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\BusInterfaceReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\BusInterfaceWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Channel.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ChannelReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ChannelWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Choice.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Component.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentGenerator.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentGeneratorReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentGeneratorWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentInstantiation.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\ComponentWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Cpu.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\CPUReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\CPUWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\DesignConfigurationInstantiation.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\DesignInstantiation.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\EnumeratedValue.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\EnumeratedValueReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\EnumeratedValueWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Field.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FieldReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FieldReset.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FieldWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\File.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FileReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FileSet.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FileSetReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FileSetWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\FileWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Function.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\IndirectInterface.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\IndirectInterfaceReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\IndirectInterfaceWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\InstantiationsReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\InstantiationsWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MasterInterface.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryBlockBase.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryBlockBaseReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryBlockBaseWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMap.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMapBase.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMapBaseReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMapBaseWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMapReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryMapWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MemoryRemap.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\MirroredSlaveInterface.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Model.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\OtherClockDriver.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Port.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\PortMap.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\PortReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\PortWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\Register.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RegisterBase.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RegisterDefinition.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RegisterFile.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RegisterReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RegisterWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RemapPort.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Component\RemapState.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\validators\BusDefinitionValidator.h">
+      <Filter>IPXACTmodels\BusDefinition\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionReader.h">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionWriter.h">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinition.h">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\validators\AbstractionDefinitionValidator.h">
+      <Filter>IPXACTmodels\AbstractionDefinition\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinition.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinitionReader.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinitionWriter.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\PortAbstraction.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstraction.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalPort.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstraction.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstractionWriter.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\AbstractionDefinition\WirePort.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\generaldeclarations.h">
+      <Filter>IPXACTmodels\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\ipxactmodels_global.h">
+      <Filter>IPXACTmodels\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\utilities\BusDefinitionUtils.h">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\utilities\ComponentSearch.h">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\utilities\Search.h">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\utilities\XmlUtils.h">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\validators\SystemDesignConfigurationValidator.h">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\validators\SystemViewConfigurationValidator.h">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\validators\ApiDefinitionValidator.h">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\validators\ComDefinitionValidator.h">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComInterconnection.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComInterface.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComProperty.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ConnectionRoute.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\FileDependency.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\HierApiInterconnection.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\HierComInterconnection.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\InterfaceGraphicsData.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Array.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Group.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Placeholder.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Position.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Value.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\KactusAttribute.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\SystemView.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinition.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinitionReader.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinitionWriter.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiFunction.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiFunctionParameter.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiInterconnection.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ApiInterface.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ColumnDesc.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ColumnTypes.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinition.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinitionReader.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinitionWriter.h">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\ActiveInterface.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\AdHocConnection.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\ComponentInstance.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\ComponentInstanceReader.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\ComponentInstanceWriter.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\Design.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\DesignReader.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\DesignWriter.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\HierInterface.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\Interconnection.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\MonitorInterconnection.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\MonitorInterface.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\PortReference.h">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\validator\AdHocConnectionValidator.h">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\validator\ComponentInstanceValidator.h">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\validator\DesignValidator.h">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Design\validator\InterconnectionValidator.h">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\AbstractorInstance.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfiguration.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfigurationReader.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfigurationWriter.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\InterconnectionConfiguration.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\InterfaceRef.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\MultipleAbstractorInstances.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\ViewConfiguration.h">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\validators\DesignConfigurationValidator.h">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\validators\InterconnectionConfigurationValidator.h">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\validators\ViewConfigurationValidator.h">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ParameterReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ParameterWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\PartSelect.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\PresenceTypes.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Protocol.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ProtocolReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ProtocolWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Qualifier.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Range.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\TimingConstraint.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\TransactionalTypes.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Vector.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\VLNV.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\AccessTypes.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Array.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Assertion.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\BooleanValue.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\BuildModel.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\CellSpecification.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ClockUnit.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\CommonItemsReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\CommonItemsWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ConfigurableElementValue.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ConfigurableVLNVReference.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\DirectionTypes.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Document.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\DocumentReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\DocumentWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Enumeration.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Extendable.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\FileBuilder.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\FileBuilderReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\FileBuilderWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\FileTypes.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\GenericVendorExtension.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ModuleParameter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ModuleParameterReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\ModuleParameterWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\NameGroup.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\NameGroupReader.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\NameGroupWriter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\NameValuePair.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\Parameter.cpp">
+      <Filter>IPXACTmodels\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\CellSpecificationValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\namevalidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\NMTokenValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\ParameterValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\ProtocolValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\TimingConstraintValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\ValueFormatter.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\common\validators\AssertionValidator.cpp">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\AbstractionTypeValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\AddressBlockValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\AddressSpaceValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\BusInterfaceValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\ChannelValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\ChoiceValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\ComponentGeneratorValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\ComponentValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\CPUValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\EnumeratedValueValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\FieldValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\FileSetValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\FileValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\IndirectInterfaceValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\InstantiationsValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\MemoryBlockValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\MemoryMapBaseValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\MemoryMapValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\MemoryReserve.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\OtherClockDriverValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\PortMapValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\PortTypeValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\PortValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\RegisterBaseValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\RegisterFileValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\RegisterValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\RemapStateValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\SubspaceMapValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\validators\ViewValidator.cpp">
+      <Filter>IPXACTmodels\Component\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RemapStateWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Segment.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\SlaveInterface.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\SubSpaceMap.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\SubspaceMapReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\SubSpaceMapWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Transactional.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\TransparentBridge.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\View.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ViewReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ViewWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Wire.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\WireTypeDef.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\WriteValueConstraint.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AbstractionType.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressBlock.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressBlockReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressBlockWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressSpace.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressSpaceReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AddressSpaceWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\AlternateRegister.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\BuildCommand.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\BusInterface.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\BusInterfaceReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\BusInterfaceWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Channel.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ChannelReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ChannelWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Choice.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ChoiceReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ChoiceWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Component.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentGenerator.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentGeneratorReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentGeneratorWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentInstantiation.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\ComponentWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Cpu.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\CPUReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\CPUWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\DesignConfigurationInstantiation.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\DesignInstantiation.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\EnumeratedValue.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\EnumeratedValueReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\EnumeratedValueWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Field.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FieldReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FieldReset.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FieldWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\File.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FileReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FileSet.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FileSetReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FileSetWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\FileWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Function.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\IndirectInterface.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\IndirectInterfaceReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\IndirectInterfaceWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\InstantiationsReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\InstantiationsWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MasterInterface.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryBlockBase.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryBlockBaseReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryBlockBaseWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMap.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMapBase.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMapBaseReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMapBaseWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMapReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryMapWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MemoryRemap.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\MirroredSlaveInterface.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Model.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\OtherClockDriver.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\OtherClockDriverReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\OtherClockDriverWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Port.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\PortMap.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\PortReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\PortWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\Register.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RegisterBase.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RegisterDefinition.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RegisterFile.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RegisterReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RegisterWriter.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RemapPort.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RemapState.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Component\RemapStateReader.cpp">
+      <Filter>IPXACTmodels\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\validators\BusDefinitionValidator.cpp">
+      <Filter>IPXACTmodels\BusDefinition\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionWriter.cpp">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinition.cpp">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionReader.cpp">
+      <Filter>IPXACTmodels\BusDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\validators\AbstractionDefinitionValidator.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinition.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinitionReader.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\AbstractionDefinitionWriter.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\PortAbstraction.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstraction.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstractionReader.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstractionWriter.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalPort.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstraction.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstractionReader.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstractionWriter.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\AbstractionDefinition\WirePort.cpp">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\generaldeclarations.cpp">
+      <Filter>IPXACTmodels\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\utilities\ComponentSearch.cpp">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\utilities\XmlUtils.cpp">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\utilities\BusDefinitionUtils.cpp">
+      <Filter>IPXACTmodels\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\validators\SystemDesignConfigurationValidator.cpp">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\validators\SystemViewConfigurationValidator.cpp">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\validators\ApiDefinitionValidator.cpp">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\validators\ComDefinitionValidator.cpp">
+      <Filter>IPXACTmodels\kactusExtensions\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComInterface.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComProperty.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ConnectionRoute.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\FileDependency.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\HierApiInterconnection.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\HierComInterconnection.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\InterfaceGraphicsData.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Array.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Group.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Placeholder.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Position.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\Kactus2Value.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\KactusAttribute.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\SystemView.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinition.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinitionReader.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiDefinitionWriter.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiFunction.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiFunctionParameter.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiInterconnection.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ApiInterface.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ColumnDesc.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinition.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinitionReader.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComDefinitionWriter.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\kactusExtensions\ComInterconnection.cpp">
+      <Filter>IPXACTmodels\kactusExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\ActiveInterface.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\AdHocConnection.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\ComponentInstance.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\ComponentInstanceReader.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\ComponentInstanceWriter.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\Design.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\DesignReader.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\DesignWriter.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\HierInterface.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\Interconnection.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\MonitorInterconnection.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\MonitorInterface.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\PortReference.cpp">
+      <Filter>IPXACTmodels\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\validator\ComponentInstanceValidator.cpp">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\validator\DesignValidator.cpp">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\validator\InterconnectionValidator.cpp">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Design\validator\AdHocConnectionValidator.cpp">
+      <Filter>IPXACTmodels\Design\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\AbstractorInstance.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfiguration.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfigurationReader.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\DesignConfigurationWriter.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\InterconnectionConfiguration.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\InterfaceRef.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\MultipleAbstractorInstances.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\ViewConfiguration.cpp">
+      <Filter>IPXACTmodels\designConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\validators\DesignConfigurationValidator.cpp">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\validators\InterconnectionConfigurationValidator.cpp">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\validators\ViewConfigurationValidator.cpp">
+      <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ParameterReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ParameterWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ProtocolReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ProtocolWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ModuleParameterReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\ModuleParameterWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\NameGroupReader.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\NameGroupWriter.h">
+      <Filter>IPXACTmodels\common</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\validators\namevalidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\common\validators\NMTokenValidator.h">
+      <Filter>IPXACTmodels\common\validators</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\RemapStateWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\ViewReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\ViewWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\ChoiceReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\ChoiceWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\OtherClockDriverReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\OtherClockDriverWriter.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\Component\RemapStateReader.h">
+      <Filter>IPXACTmodels\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstractionReader.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\AbstractionDefinition\TransactionalAbstractionWriter.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\IPXACTmodels\AbstractionDefinition\WireAbstractionReader.h">
+      <Filter>IPXACTmodels\AbstractionDefinition</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

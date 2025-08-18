@@ -473,8 +473,8 @@ void DesignWidget::print()
     // execute print dialog for user to select the printer and desired options
     QPrinter printer(QPrinter::ScreenResolution);
     printer.setPageOrientation(QPageLayout::Landscape);
-//    printer.setPageSize(QPageSize::A4);       //. 2023-11-11 수정
-    printer.setPageSize(QPagedPaintDevice::A4);
+    printer.setPageSize(QPageSize::A4);       //. 2023-11-11 수정
+    //printer.setPageSize(QPagedPaintDevice::A4);
     QPrintDialog dialog(&printer, this);
 
     if (dialog.exec() == QPrintDialog::Accepted)

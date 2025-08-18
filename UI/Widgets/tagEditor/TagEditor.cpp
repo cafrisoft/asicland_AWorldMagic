@@ -61,7 +61,11 @@ void TagEditor::setupEditors(QWidget* nameEditor)
     completer->setCaseSensitivity(Qt::CaseInsensitive);
 
     QAction* action = new QAction(this);
+#ifdef _WIN32
+    action->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_Space));
+#else
     action->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Space));
+#endif
     action->setShortcutContext(Qt::WidgetShortcut);
 
     connect(action, SIGNAL(triggered()), completer, SLOT(complete()), Qt::UniqueConnection);

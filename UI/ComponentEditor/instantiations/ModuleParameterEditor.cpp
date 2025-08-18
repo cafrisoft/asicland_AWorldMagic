@@ -56,8 +56,8 @@ instantiation_(instantiation)
     view_->setHorizontalHeader(horizontalHeader);
 
     view_->verticalHeader()->setMaximumWidth(300);
-//    view_->verticalHeader()->setMinimumWidth(horizontalHeader->fontMetrics().horizontalAdvance(tr("Name"))*2);
-    view_->verticalHeader()->setMinimumWidth(horizontalHeader->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
+    view_->verticalHeader()->setMinimumWidth(horizontalHeader->fontMetrics().horizontalAdvance(tr("Name"))*2);
+//    view_->verticalHeader()->setMinimumWidth(horizontalHeader->fontMetrics().width(tr("Name"))*2);     //. not surported Qt5.11. 부터 지원
     view_->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
     view_->verticalHeader()->show();
   

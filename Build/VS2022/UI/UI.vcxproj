@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C337F1D-9A14-4CEE-BB25-00A513C3FB0C}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>6.2.4</QtInstall>
+    <QtModules>core</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>6.2.4</QtInstall>
+    <QtModules>core</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(Project_Dir)..\..\..\;C:\QT\6.2.4\install\include\QtXml;C:\QT\6.2.4\install\include\QtWidgets;C:\QT\6.2.4\install\include\QtGui;$(Project_Dir)..\..\..\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UI_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UI_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageDialog.cpp" />
+    <ClCompile Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageView.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\CodeEditorSettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\ComponentEditorSettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\FileTypesDelegate.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\FileTypeSettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\FileTypesModel.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\filetypesview.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\GeneralSettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\k2envvariablesettingspage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\k2envvarmodel.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\NamingPolicySettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\NewPluginsDialog.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\PluginInfoWidget.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\PluginSettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\SettingsDialog.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\SettingsPage.cpp" />
+    <ClCompile Include="..\..\..\UI\Settings\SettingsUpdater.cpp" />
+    <ClCompile Include="..\..\..\UI\Views\EditableListView\editablelistview.cpp" />
+    <ClCompile Include="..\..\..\UI\Views\EditableTableView\editabletableview.cpp" />
+    <ClCompile Include="..\..\..\UI\Views\EditableTreeView\EditableTreeSortFilter.cpp" />
+    <ClCompile Include="..\..\..\UI\Views\EditableTreeView\EditableTreeView.cpp" />
+    <ClCompile Include="..\..\..\UI\Views\ExpandingTreeView\ExpandingTreeView.cpp" />
+    <QtMoc Include="..\..\..\UI\GraphicalMessageMediator\GraphicalMessageMediator.h" />
+    <QtMoc Include="..\..\..\UI\Settings\CodeEditorSettingsPage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\ComponentEditorSettingsPage.h" />
+    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageDialog.h" />
+    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageView.h" />
+    <ClInclude Include="..\..\..\UI\Settings\FileTypeColumns.h" />
+    <QtMoc Include="..\..\..\UI\Settings\FileTypesDelegate.h" />
+    <QtMoc Include="..\..\..\UI\Settings\FileTypeSettingsPage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\FileTypesModel.h" />
+    <QtMoc Include="..\..\..\UI\Settings\filetypesview.h" />
+    <QtMoc Include="..\..\..\UI\Settings\GeneralSettingsPage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\k2envvariablesettingspage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\k2envvarmodel.h" />
+    <QtMoc Include="..\..\..\UI\Settings\NamingPolicySettingsPage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\NewPluginsDialog.h" />
+    <ClInclude Include="..\..\..\UI\Settings\PluginInfoWidget.h" />
+    <QtMoc Include="..\..\..\UI\Settings\PluginSettingsPage.h" />
+    <QtMoc Include="..\..\..\UI\Settings\SettingsDialog.h" />
+    <QtMoc Include="..\..\..\UI\Settings\SettingsPage.h" />
+    <ClInclude Include="..\..\..\UI\Settings\SettingsUpdater.h" />
+    <QtMoc Include="..\..\..\UI\Views\EditableTableView\editabletableview.h" />
+    <QtMoc Include="..\..\..\UI\Views\EditableListView\editablelistview.h" />
+    <QtMoc Include="..\..\..\UI\Views\EditableTreeView\EditableTreeSortFilter.h" />
+    <QtMoc Include="..\..\..\UI\Views\EditableTreeView\EditableTreeView.h" />
+    <QtMoc Include="..\..\..\UI\Views\ExpandingTreeView\ExpandingTreeView.h" />
+    <ClInclude Include="ui_global.h" />
+    <ClCompile Include="..\..\..\UI\GraphicalMessageMediator\GraphicalMessageMediator.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

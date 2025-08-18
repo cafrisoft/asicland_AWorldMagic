@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{934cccba-8793-48fa-a326-bb21d4628141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\GraphicalMessageMediator">
+      <UniqueIdentifier>{55ff7adf-23a0-4f65-9301-397456b59f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Settings">
+      <UniqueIdentifier>{38d28c50-433d-4836-8911-35652b5744d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Views">
+      <UniqueIdentifier>{e3dcd9c6-02fc-4ae1-9dea-12e3664bf111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Views\EditableTableView">
+      <UniqueIdentifier>{d155ea53-50f4-41d5-89b0-b858e6daa678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Views\EditableListView">
+      <UniqueIdentifier>{80a27ed3-5785-4106-bcb2-e2967831a5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Views\EditableTreeView">
+      <UniqueIdentifier>{2d60ee36-9750-4a1c-adb7-1f2aa32cf1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Views\ExpandingTreeView">
+      <UniqueIdentifier>{f7d96643-505c-40ca-a0ee-889626852b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Dialogs">
+      <UniqueIdentifier>{202e8d2f-8055-432d-a6cf-5fb1148cbfaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Dialogs\propertyPageDialog">
+      <UniqueIdentifier>{2869cde7-ac4f-4f74-bc5d-b4a4b2166359}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Settings\FileTypeColumns.h">
+      <Filter>UI\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Settings\PluginInfoWidget.h">
+      <Filter>UI\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Settings\SettingsUpdater.h">
+      <Filter>UI\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageDialog.h">
+      <Filter>UI\Dialogs\propertyPageDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageView.h">
+      <Filter>UI\Dialogs\propertyPageDialog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\UI\GraphicalMessageMediator\GraphicalMessageMediator.cpp">
+      <Filter>UI\GraphicalMessageMediator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\CodeEditorSettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\ComponentEditorSettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\FileTypesDelegate.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\FileTypeSettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\FileTypesModel.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\filetypesview.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\GeneralSettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\k2envvariablesettingspage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\k2envvarmodel.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\NamingPolicySettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\NewPluginsDialog.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\PluginInfoWidget.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\PluginSettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\SettingsDialog.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\SettingsPage.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Settings\SettingsUpdater.cpp">
+      <Filter>UI\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Views\EditableTableView\editabletableview.cpp">
+      <Filter>UI\Views\EditableTableView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Views\EditableListView\editablelistview.cpp">
+      <Filter>UI\Views\EditableListView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Views\EditableTreeView\EditableTreeView.cpp">
+      <Filter>UI\Views\EditableTreeView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Views\EditableTreeView\EditableTreeSortFilter.cpp">
+      <Filter>UI\Views\EditableTreeView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Views\ExpandingTreeView\ExpandingTreeView.cpp">
+      <Filter>UI\Views\ExpandingTreeView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageDialog.cpp">
+      <Filter>UI\Dialogs\propertyPageDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageView.cpp">
+      <Filter>UI\Dialogs\propertyPageDialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\UI\GraphicalMessageMediator\GraphicalMessageMediator.h">
+      <Filter>UI\GraphicalMessageMediator</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\CodeEditorSettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\ComponentEditorSettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\FileTypesDelegate.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\FileTypeSettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\FileTypesModel.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\filetypesview.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\GeneralSettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\k2envvariablesettingspage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\k2envvarmodel.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\NamingPolicySettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\NewPluginsDialog.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\PluginSettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\SettingsDialog.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Settings\SettingsPage.h">
+      <Filter>UI\Settings</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Views\EditableTableView\editabletableview.h">
+      <Filter>UI\Views\EditableTableView</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Views\EditableListView\editablelistview.h">
+      <Filter>UI\Views\EditableListView</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Views\EditableTreeView\EditableTreeSortFilter.h">
+      <Filter>UI\Views\EditableTreeView</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Views\EditableTreeView\EditableTreeView.h">
+      <Filter>UI\Views\EditableTreeView</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI\Views\ExpandingTreeView\ExpandingTreeView.h">
+      <Filter>UI\Views\ExpandingTreeView</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

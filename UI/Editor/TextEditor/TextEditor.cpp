@@ -222,7 +222,11 @@ void TextEditor::syntaxHighlighter()
             bool isBoundaryBefore = textBefore.isNull() || textBefore.isSpace() || textBefore.isPunct();
             bool isBoundaryAfter = textAfter.isNull() || textAfter.isSpace() || textAfter.isPunct();
 
-            if (textBefore == "_" || textAfter == "_")
+#ifdef  _WIN32
+            if (textBefore == QChar('_') || textAfter == QChar('_'))
+#else
+            if (textBefore == "_" || textAfter == "_"))
+#endif
             {
                 isBoundaryBefore = false;
                 isBoundaryAfter = false;

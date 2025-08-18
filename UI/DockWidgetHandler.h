@@ -49,6 +49,10 @@
 //#include <editors/PythonSourceEditor/PythonSourceEditor.h>
 #include <CommandWindow/ConsoleManager.h>
 
+#ifdef _WIN32
+#include <CommandWindow/ConsolLogTab.h>
+#endif
+
 class ProjectHandler;
 class ProjectLibraryHandler;
 class FPGAHandler;

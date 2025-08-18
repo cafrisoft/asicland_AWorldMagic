@@ -12,10 +12,15 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
+#ifdef _WIN32
+#define KACTUS2_API
+
+#else
 #ifdef KACTUS2_EXPORTS
 #define KACTUS2_API Q_DECL_EXPORT
 #else
 #define KACTUS2_API Q_DECL_IMPORT
+#endif
 #endif
 
 //-----------------------------------------------------------------------------

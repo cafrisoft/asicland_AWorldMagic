@@ -190,7 +190,7 @@ void PythonFPGA::startProcess()
     // QByteArray를 QString로 변환
     QString outputStr = QString::fromUtf8(output);
         // 줄바꿈 문자를 기준으로 문자열 분리하여 QStringList에 담기
-    QStringList stringList = outputStr.split("\n", QString::SkipEmptyParts);
+    QStringList stringList = outputStr.split("\n", Qt::SkipEmptyParts);
     // QStringList를 QList<QString>로 변환 (사실상 QStringList 자체가 QList<QString>의 서브 클래스이므로 필요에 따라 이 변환을 생략할 수 있습.)
     QList<QString> outputList = stringList;
 
@@ -215,7 +215,7 @@ void PythonFPGA::startProcess()
         // QByteArray를 QString로 변환
         outputStr = QString::fromUtf8(errorOutput);
         // 줄바꿈 문자를 기준으로 문자열 분리하여 QStringList에 담기
-        stringList = outputStr.split("\n", QString::SkipEmptyParts);
+        stringList = outputStr.split("\n", Qt::SkipEmptyParts);
         // QStringList를 QList<QString>로 변환 (사실상 QStringList 자체가 QList<QString>의 서브 클래스이므로 필요에 따라 이 변환을 생략할 수 있습니다.)
         outputList = stringList;
 
@@ -293,7 +293,7 @@ void PythonFPGA::startProcess()
     output = setprjProcess.readAllStandardOutput();
     // QByteArray를 QString로 변환
     outputStr = QString::fromUtf8(output);
-    stringList = outputStr.split("\n", QString::SkipEmptyParts);
+    stringList = outputStr.split("\n", Qt::SkipEmptyParts);
     outputList = stringList;
 
     // 출력 결과 확인
@@ -318,7 +318,7 @@ void PythonFPGA::startProcess()
 
         // QByteArray를 QString로 변환
         outputStr = QString::fromUtf8(errorOutput);
-        stringList = outputStr.split("\n", QString::SkipEmptyParts);
+        stringList = outputStr.split("\n", Qt::SkipEmptyParts);
         outputList = stringList;
 
         // 출력 결과 확인
@@ -341,7 +341,7 @@ void PythonFPGA::startProcess()
     // QByteArray를 QString로 변환
     outputStr = QString::fromUtf8(output);
     // 줄바꿈 문자를 기준으로 문자열 분리하여 QStringList에 담기
-    stringList = outputStr.split("\n", QString::SkipEmptyParts);
+    stringList = outputStr.split("\n", Qt::SkipEmptyParts);
     outputList = stringList;
 
     // 출력 결과 확인
@@ -400,7 +400,7 @@ void PythonFPGA::startProcess()
         // QByteArray를 QString로 변환
         outputStr = QString::fromUtf8(output);
         // 줄바꿈 문자를 기준으로 문자열 분리하여 QStringList에 담기
-        stringList = outputStr.split("\n", QString::SkipEmptyParts);
+        stringList = outputStr.split("\n", Qt::SkipEmptyParts);
         outputList = stringList;
 
         // 출력 결과 확인
@@ -424,7 +424,7 @@ void PythonFPGA::startProcess()
 
             // QByteArray를 QString로 변환
             outputStr = QString::fromUtf8(errorOutput);
-            stringList = outputStr.split("\n", QString::SkipEmptyParts);
+            stringList = outputStr.split("\n", Qt::SkipEmptyParts);
             outputList = stringList;
 
             // 출력 결과 확인
@@ -448,7 +448,7 @@ void PythonFPGA::startProcess()
     // QByteArray를 QString로 변환
     outputStr = QString::fromUtf8(output);
     // 줄바꿈 문자를 기준으로 문자열 분리하여 QStringList에 담기
-    stringList = outputStr.split("\n", QString::SkipEmptyParts);
+    stringList = outputStr.split("\n", Qt::SkipEmptyParts);
     outputList = stringList;
 
     // 출력 결과 확인

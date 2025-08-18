@@ -54,8 +54,8 @@ void ComponentEditorTreeDelegate::paint(QPainter* painter,QStyleOptionViewItem c
 
     QString displayText = index.data(Qt::DisplayRole).toString();
     auto metrics = QFontMetrics(optionOverride.font);
-//    int textWidth = metrics.horizontalAdvance(displayText);
-    int textWidth = metrics.width(displayText);     //. not surported Qt5.11. 부터 지원
+    int textWidth = metrics.horizontalAdvance(displayText);
+//    int textWidth = metrics.width(displayText);     //. not surported Qt5.11. 부터 지원
 
     //! Render the items in the following order: display, decoration, indicator.
     QRect displayRect;

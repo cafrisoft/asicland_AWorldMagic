@@ -8,6 +8,8 @@
 // Description:
 // Manages the dockable widgets for the main window.
 //-----------------------------------------------------------------------------
+#include <GlobalBuildOptions.h>
+
 #ifndef USE_AWMWIDGET
 #define USE_AWMWIDGET 1
 #endif // USE_AWMWIDGET

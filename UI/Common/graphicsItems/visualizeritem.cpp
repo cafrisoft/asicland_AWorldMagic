@@ -298,8 +298,8 @@ void VisualizerItem::clipName()
     }
 
     QFontMetrics fontMetrics(nameItem_.font());
-//    int charCount = qMax(int(0), maxLength) / fontMetrics.horizontalAdvance("x");
-    int charCount = qMax(int(0), maxLength) / fontMetrics.width("x");     //. not surported Qt5.11. 부터 지원
+    int charCount = qMax(int(0), maxLength) / fontMetrics.horizontalAdvance("x");
+//    int charCount = qMax(int(0), maxLength) / fontMetrics.width("x");     //. not surported Qt5.11. 부터 지원
 
     nameItem_.setText(clipText(name_, charCount));
 }
@@ -325,8 +325,8 @@ void VisualizerItem::clipAddress(QString const& text, QGraphicsSimpleTextItem* i
     }
 
     QFontMetrics labelMetrics(item->font());
-//    int maxCharacters = qMax(int(0), maxLength) / labelMetrics.horizontalAdvance("x");
-    int maxCharacters = qMax(int(0), maxLength) / labelMetrics.width("x");     //. not surported Qt5.11. 부터 지원
+    int maxCharacters = qMax(int(0), maxLength) / labelMetrics.horizontalAdvance("x");
+//    int maxCharacters = qMax(int(0), maxLength) / labelMetrics.width("x");     //. not surported Qt5.11. 부터 지원
 
     item->setText(clipText(text, maxCharacters));
 }

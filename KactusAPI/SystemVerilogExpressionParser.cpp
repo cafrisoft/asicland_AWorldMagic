@@ -121,9 +121,9 @@ QVector<QString> SystemVerilogExpressionParser::convertToRPN(QString const& expr
         }
 
         QRegularExpressionMatch operatorMatch = ANY_OPERATOR.match(expression, index,
-            QRegularExpression::NormalMatch, QRegularExpression::AnchoredMatchOption);
+            QRegularExpression::NormalMatch, QRegularExpression::AnchorAtOffsetMatchOption);
         QRegularExpressionMatch literalMatch = PRIMARY_LITERAL.match(expression, index,
-            QRegularExpression::NormalMatch, QRegularExpression::AnchoredMatchOption);
+            QRegularExpression::NormalMatch, QRegularExpression::AnchorAtOffsetMatchOption);
 
         if (nextMayBeLiteral && literalMatch.hasMatch())
         {

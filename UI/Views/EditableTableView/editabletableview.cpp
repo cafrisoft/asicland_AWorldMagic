@@ -540,8 +540,8 @@ void EditableTableView::onPasteAction()
     QString pasteText = QApplication::clipboard()->text(textType);
 
 	// Split the string from clip board into rows.
-//	QStringList rowsToAdd = pasteText.split("\n", Qt::SkipEmptyParts);
-    QStringList rowsToAdd = pasteText.split("\n", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+	QStringList rowsToAdd = pasteText.split("\n", Qt::SkipEmptyParts);
+//    QStringList rowsToAdd = pasteText.split("\n", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 
     bool useDynamicSorting = false;
     QSortFilterProxyModel* proxyModel = qobject_cast<QSortFilterProxyModel*>(model());
@@ -685,8 +685,8 @@ void EditableTableView::onCSVExport(const QString& filePath)
     {
 		stream << model()->headerData(i, Qt::Horizontal, Qt::DisplayRole).toString().simplified() << ";";
 	}
-//	stream << Qt::endl;
-    stream << endl;    //. not surported Qt.5.14 부터 지원
+	stream << Qt::endl;
+//    stream << endl;    //. not surported Qt.5.14 부터 지원
 
 	// write each row
 	for (int row = 0; row < rowCount; row++)
@@ -713,8 +713,8 @@ void EditableTableView::onCSVExport(const QString& filePath)
             }
 			
 		}
-//		stream << Qt::endl;
-        stream << endl;    //. not surported Qt.5.14 부터 지원
+		stream << Qt::endl;
+//        stream << endl;    //. not surported Qt.5.14 부터 지원
 	}
 	file.close();
 
@@ -840,15 +840,15 @@ void EditableTableView::setModel(QAbstractItemModel* model)
 		// get the header for the section
 		QString headerText = model->headerData(i, Qt::Horizontal, Qt::DisplayRole).toString();
 		// if the header contains several lines
-//		QStringList headerLines = headerText.split("\n", Qt::SkipEmptyParts);
-        QStringList headerLines = headerText.split("\n", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+		QStringList headerLines = headerText.split("\n", Qt::SkipEmptyParts);
+//        QStringList headerLines = headerText.split("\n", QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 		int headerSize = 0;
 
 		// find the line that needs most space
 		for (QString const& headerLine : headerLines)
         {
-//			headerSize = qMax(headerSize, fMetrics.horizontalAdvance(headerLine));
-            headerSize = qMax(headerSize, fMetrics.width(headerLine));     //. not surported Qt5.11. 부터 지원
+			headerSize = qMax(headerSize, fMetrics.horizontalAdvance(headerLine));
+//            headerSize = qMax(headerSize, fMetrics.width(headerLine));     //. not surported Qt5.11. 부터 지원
 		}
         headerSize += 45;
 
@@ -863,7 +863,11 @@ void EditableTableView::setModel(QAbstractItemModel* model)
 void EditableTableView::setupActions()
 {
     QList<QKeySequence> addRowShortcuts;
+#ifdef _WIN32
+    addRowShortcuts << QKeySequence::InsertLineSeparator << (Qt::SHIFT | Qt::Key_Return);
+#else
     addRowShortcuts << QKeySequence::InsertLineSeparator << Qt::SHIFT + Qt::Key_Return;
+#endif
 
     addAction(&addAction_);
     addAction_.setToolTip(tr("Add a new row to table"));
@@ -875,7 +879,11 @@ void EditableTableView::setupActions()
     addAction(&removeAction_);
     removeAction_.setToolTip(tr("Remove a row from the table"));
     removeAction_.setStatusTip(tr("Remove a row from the table"));    
+#ifdef _WIN32
+    removeAction_.setShortcut(Qt::SHIFT | Qt::Key_Delete);
+#else
     removeAction_.setShortcut(Qt::SHIFT + Qt::Key_Delete);
+#endif
     removeAction_.setShortcutContext(Qt::WidgetWithChildrenShortcut);
     connect(&removeAction_, SIGNAL(triggered()), this, SLOT(onRemoveAction()), Qt::UniqueConnection);
 

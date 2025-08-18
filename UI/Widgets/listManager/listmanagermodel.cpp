@@ -205,8 +205,8 @@ void ListManagerModel::moveItem(QModelIndex const& originalPos, QModelIndex cons
     else
     {
         beginResetModel();
-//        items_.swapItemsAt(originalPos.row(), newPos.row());
-        items_.swap(originalPos.row(), newPos.row());     //. not surported Qt5.11. 부터 지원
+        items_.swapItemsAt(originalPos.row(), newPos.row());
+//        items_.swap(originalPos.row(), newPos.row());     //. not surported Qt5.11. 부터 지원
         endResetModel();
     }
     emit contentChanged();

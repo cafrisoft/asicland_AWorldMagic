@@ -64,5 +64,5 @@ QString FileHandler::getFileTypeForSuffix(QMultiMap<QString, QString> const& fil
         }
     }
 
-//    return QString();
+    return QString();
 }

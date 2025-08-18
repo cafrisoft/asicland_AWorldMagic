@@ -18,7 +18,7 @@ public:
         QStringList commonData;  // 'common' 항목을 위한 QStringList
 
         //QStringList lines = dataString.split('\n', Qt::SkipEmptyParts);
-        QStringList lines = dataString.split('\n', QString::SkipEmptyParts);
+        QStringList lines = dataString.split('\n', Qt::SkipEmptyParts);
 
         for (const QString& line : lines) {
             QString trimmedLine = line.trimmed();

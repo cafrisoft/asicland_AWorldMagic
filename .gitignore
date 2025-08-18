@@ -1,41 +1,42 @@
-# Prerequisites
-*.d
+## ignore file ##
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+*.opendb
+*.suo
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.dll
+*.user
+ANA38601.uvguix.*
 
-# debug information files
-*.dwo
+*.pyd.3.8
+*.pyd.3.9
+*.pyd.3.10
+*.pyd.3.11
+*.o
+
+## ignore dir name ##
+.vs/
+x86/
+x64/
+bin/
+obj/
+Debug/
+Debug-64/
+Release/
+publish/
+Listings
+Objects/
+RTE/
+
+__pycache__
+
+## ignore file ##
+/.qmake.stash
+/Makefile
+/ui_mainwindow.h
+/ui_newdesignexdialog.h
+/ui_newipdialog.h
+/ui_newiodialog.h
+/ui_newprojectdialog.h
+
+

@@ -57,7 +57,7 @@ void ComponentInstanceVerilogWriter::write(QTextStream& outputStream) const
 
 //    outputStream << indentation() << instanceString << Qt::endl;
 
-    outputStream << indentation() << instanceString << endl;    //. not surported Qt.5.14 부터 지원
+    outputStream << indentation() << instanceString << Qt::endl;    //. not surported Qt.5.14 부터 지원
 }
 
 //-----------------------------------------------------------------------------

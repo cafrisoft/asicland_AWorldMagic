@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78EF3875-840F-4FC8-964D-77262692FBEF}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>6.2.4</QtInstall>
+    <QtModules>core</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>6.2.4</QtInstall>
+    <QtModules>core</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(Project_Dir)..\..\..\;C:\QT\6.2.4\install\include\QtXml;C:\QT\6.2.4\install\include\QtWidgets;C:\QT\6.2.4\install\include\QtGui;$(Project_Dir)..\..\..\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>KACTUSAPI_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>KACTUSAPI_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\KactusAPI\AbstractionTypeInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\AbstractParameterInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\AddressBlockExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\AddressBlockInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\AddressSpaceExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\AdHocConnectionInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceInterfaceFactory.h" />
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceUtilities.h" />
+    <ClInclude Include="..\..\..\KactusAPI\CLIGenerator.h" />
+    <ClInclude Include="..\..\..\KactusAPI\CommonInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ComponentAndInstantiationsParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstanceInterface.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ComponentInstanceParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstantiationInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstantiationParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ComponentParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ConsoleMediator.h" />
+    <ClInclude Include="..\..\..\KactusAPI\DesignParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\DocumentFileAccess.h" />
+    <ClInclude Include="..\..\..\KactusAPI\DocumentValidator.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatter.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatterFactory.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatterFactoryImplementation.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionParser.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionSupport.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FieldExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FieldInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FileBuilderInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FileHandler.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FileInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\FileSetInterface.h" />
+    <QtMoc Include="..\..\..\KactusAPI\hierarchyitem.h" />
+    <QtMoc Include="..\..\..\KactusAPI\hierarchymodel.h" />
+    <ClInclude Include="..\..\..\KactusAPI\Highlighter.h" />
+    <ClInclude Include="..\..\..\KactusAPI\HighlightSource.h" />
+    <ClInclude Include="..\..\..\KactusAPI\IGeneratorPlugin.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ImportColors.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ImportHighlighter.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ImportPlugin.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ImportRunner.h" />
+    <ClInclude Include="..\..\..\KactusAPI\IncludeImportPlugin.h" />
+    <ClInclude Include="..\..\..\KactusAPI\InterconnectionInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\IPlugin.h" />
+    <ClInclude Include="..\..\..\KactusAPI\IPluginUtility.h" />
+    <ClInclude Include="..\..\..\KactusAPI\IPXactSystemVerilogParser.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ISourceAnalyzerPlugin.h" />
+    <ClInclude Include="..\..\..\KactusAPI\KactusAPI.h" />
+    <ClInclude Include="..\..\..\KactusAPI\KactusAPIGlobal.h" />
+    <ClInclude Include="..\..\..\KactusAPI\KactusColors.h" />
+    <QtMoc Include="..\..\..\KactusAPI\LibraryHandler.h" />
+    <ClInclude Include="..\..\..\KactusAPI\LibraryInterface.h" />
+    <QtMoc Include="..\..\..\KactusAPI\LibraryItem.h" />
+    <ClInclude Include="..\..\..\KactusAPI\LibraryLoader.h" />
+    <QtMoc Include="..\..\..\KactusAPI\LibraryTreeModel.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ListParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MasterPortInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MemoryBlockInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MemoryMapExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MemoryMapInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MemoryRemapExpressionGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MessageMediator.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ModelParameterSource.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ModelParameterVisualizer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ModuleParameterInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\MultipleParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\NameGroupInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\NullParser.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ParameterCache.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ParameterFinder.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ParameterizableInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ParametersInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PluginManager.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PluginSettingsModel.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PluginUtilityAdapter.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PortAbstractionInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PortMapInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\PortsInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\Project.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ProjectHandler.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ProjectInterface.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ProjectItem.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ProjectLoader.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ProjectTreeExModel.h" />
+    <QtMoc Include="..\..\..\KactusAPI\ProjectTreeModel.h" />
+    <ClInclude Include="..\..\..\KactusAPI\RegisterExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\RegisterFileExpressionsGatherer.h" />
+    <ClInclude Include="..\..\..\KactusAPI\RegisterInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\ResetInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\SubspaceMapInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\SystemVerilogExpressionParser.h" />
+    <ClInclude Include="..\..\..\KactusAPI\SystemVerilogSyntax.h" />
+    <ClInclude Include="..\..\..\KactusAPI\TagManager.h" />
+    <ClInclude Include="..\..\..\KactusAPI\TransparentBridgeInterface.h" />
+    <ClInclude Include="..\..\..\KactusAPI\utils.h" />
+    <ClInclude Include="..\..\..\KactusAPI\version.h" />
+    <ClInclude Include="..\..\..\KactusAPI\VersionHelper.h" />
+    <ClInclude Include="kactusapi_global.h" />
+    <ClCompile Include="..\..\..\KactusAPI\AbstractionTypeInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\AbstractParameterInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\AddressBlockExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\AddressBlockInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\AddressSpaceExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\AdHocConnectionInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceInterfaceFactory.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceUtilities.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\CommonInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentAndInstantiationsParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstanceInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstanceParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstantiationInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstantiationParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ComponentParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ConsoleMediator.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\DesignParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\DocumentFileAccess.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\DocumentValidator.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ExpressionFormatter.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ExpressionFormatterFactoryImplementation.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FieldExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FieldInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FileBuilderInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FileHandler.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FileInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\FileSetInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\hierarchyitem.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\hierarchymodel.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ImportHighlighter.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ImportRunner.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\InterconnectionInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\IPXactSystemVerilogParser.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\KactusAPI.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\LibraryHandler.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\LibraryItem.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\LibraryLoader.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\LibraryTreeModel.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ListParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MasterPortInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MemoryBlockInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MemoryMapExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MemoryMapInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MemoryRemapExpressionGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ModuleParameterInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\MultipleParameterFinder.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\NameGroupInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\NullParser.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ParameterCache.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ParameterizableInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ParametersInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\PluginManager.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\PluginUtilityAdapter.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\PortAbstractionInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\PortMapInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\PortsInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\Project.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ProjectHandler.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ProjectItem.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ProjectLoader.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ProjectTreeExModel.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ProjectTreeModel.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\RegisterExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\RegisterFileExpressionsGatherer.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\RegisterInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\ResetInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\SubspaceMapInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\SystemVerilogExpressionParser.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\TagManager.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\TransparentBridgeInterface.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\utils.cpp" />
+    <ClCompile Include="..\..\..\KactusAPI\VersionHelper.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

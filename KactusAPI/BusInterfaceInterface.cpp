@@ -807,8 +807,8 @@ void BusInterfaceInterface::swapBusInterfaces(int const& firstIndex, int const& 
     }
     else
     {
-//        busInterfaces_->swapItemsAt(firstIndex, secondIndex);
-        busInterfaces_->swap(firstIndex, secondIndex);     //. not surported Qt5.11. 부터 지원
+        busInterfaces_->swapItemsAt(firstIndex, secondIndex);
+        //busInterfaces_->swap(firstIndex, secondIndex);     //. not surported Qt5.11. 부터 지원
     }
 }
 

@@ -11,6 +11,9 @@
 
 #include <QHeaderView>
 #include <QMimeData>
+#include <QMouseEvent>
+#include <QTreeView>
+#include <QModelIndex>
 
 #include <AWorldMagicAPI/FPGAHandler.h>
 

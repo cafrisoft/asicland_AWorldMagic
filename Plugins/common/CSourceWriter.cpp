@@ -93,7 +93,7 @@ void CSourceWriter::writeLine(QString const& line)
     }
 
 //    stream_ << line << Qt::endl;
-    stream_ << line << endl;    //. not surported Qt.5.14 부터 지원
+    stream_ << line << Qt::endl;    //. not surported Qt.5.14 부터 지원
 }
 
 //-----------------------------------------------------------------------------
@@ -102,7 +102,7 @@ void CSourceWriter::writeLine(QString const& line)
 void CSourceWriter::writeEmptyLine()
 {
 //    stream_ << Qt::endl;
-    stream_ << endl;    //. not surported Qt.5.14 부터 지원
+    stream_ << Qt::endl;    //. not surported Qt.5.14 부터 지원
 }
 
 //-----------------------------------------------------------------------------

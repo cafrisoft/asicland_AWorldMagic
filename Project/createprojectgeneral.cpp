@@ -197,22 +197,22 @@ QString CreateProjectGeneral::MakeXML(QTableWidget *table)
     if(VendorValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "vendor 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(NameValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "version 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(Author.isEmpty())
     {
         QMessageBox::information(this, "General",  "author 정보가 없습니다.");
-        return false;
+        return "";
     }
     if(saveDirValue.isEmpty())
     {
         QMessageBox::information(this, "General",  "saveDirValue 정보가 없습니다.");
-        return false;
+        return "";
     }
 
 //    QString sFile = mgr.GetGeneralXMLPath(VendorValue, NameValue, VersionValue);

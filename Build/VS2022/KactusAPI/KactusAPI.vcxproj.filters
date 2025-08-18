@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="KactusAPI">
+      <UniqueIdentifier>{d6b8c9cb-58f3-4b06-913c-c8223819206c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kactusapi_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FileInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FileSetInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\Highlighter.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\HighlightSource.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\IGeneratorPlugin.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ImportColors.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ImportPlugin.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\IncludeImportPlugin.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\InterconnectionInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\IPlugin.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\IPluginUtility.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\IPXactSystemVerilogParser.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ISourceAnalyzerPlugin.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\KactusAPI.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\KactusAPIGlobal.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\KactusColors.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\LibraryInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\LibraryLoader.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ListParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MasterPortInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MemoryBlockInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MemoryMapExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MemoryMapInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MemoryRemapExpressionGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MessageMediator.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ModelParameterSource.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ModelParameterVisualizer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ModuleParameterInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\MultipleParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\NameGroupInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\NullParser.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ParameterizableInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ParametersInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PluginManager.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PluginSettingsModel.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PluginUtilityAdapter.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PortAbstractionInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PortMapInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\PortsInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\Project.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ProjectInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ProjectLoader.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\RegisterExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\RegisterFileExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\RegisterInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ResetInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\SubspaceMapInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\SystemVerilogExpressionParser.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\SystemVerilogSyntax.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\TagManager.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\TransparentBridgeInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\utils.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\version.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\VersionHelper.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AbstractionTypeInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AbstractParameterInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AddressBlockExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AddressBlockInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AddressSpaceExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\AdHocConnectionInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceInterfaceFactory.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\BusInterfaceUtilities.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\CLIGenerator.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\CommonInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ComponentAndInstantiationsParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstanceInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstantiationInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ComponentInstantiationParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ComponentParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ConsoleMediator.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\DesignParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\DocumentFileAccess.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\DocumentValidator.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatter.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatterFactory.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionFormatterFactoryImplementation.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionParser.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\ExpressionSupport.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FieldExpressionsGatherer.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FieldInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FileBuilderInterface.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\KactusAPI\FileHandler.h">
+      <Filter>KactusAPI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\KactusAPI\FileSetInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\hierarchyitem.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\hierarchymodel.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ImportHighlighter.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ImportRunner.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\InterconnectionInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\IPXactSystemVerilogParser.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\KactusAPI.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\LibraryHandler.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\LibraryItem.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\LibraryLoader.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\LibraryTreeModel.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ListParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MasterPortInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MemoryBlockInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MemoryMapExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MemoryMapInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MemoryRemapExpressionGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ModuleParameterInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\MultipleParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\NameGroupInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\NullParser.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ParameterCache.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ParameterizableInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ParametersInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\PluginManager.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\PluginUtilityAdapter.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\PortAbstractionInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\PortMapInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\PortsInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\Project.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ProjectHandler.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ProjectItem.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ProjectLoader.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ProjectTreeExModel.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ProjectTreeModel.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\RegisterExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\RegisterFileExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\RegisterInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ResetInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\SubspaceMapInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\SystemVerilogExpressionParser.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\TagManager.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\TransparentBridgeInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\utils.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\VersionHelper.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AbstractionTypeInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AbstractParameterInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AddressBlockExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AddressBlockInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AddressSpaceExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\AdHocConnectionInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceInterfaceFactory.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\BusInterfaceUtilities.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\CommonInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentAndInstantiationsParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstanceInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstanceParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstantiationInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentInstantiationParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ComponentParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ConsoleMediator.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\DesignParameterFinder.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\DocumentFileAccess.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\DocumentValidator.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ExpressionFormatter.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\ExpressionFormatterFactoryImplementation.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\FieldExpressionsGatherer.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\FieldInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\FileBuilderInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\FileHandler.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\KactusAPI\FileInterface.cpp">
+      <Filter>KactusAPI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\KactusAPI\hierarchyitem.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\hierarchymodel.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ImportHighlighter.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ImportRunner.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\LibraryHandler.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\LibraryItem.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\LibraryTreeModel.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ParameterCache.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ProjectHandler.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ProjectItem.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ProjectTreeExModel.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ProjectTreeModel.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\KactusAPI\ComponentInstanceParameterFinder.h">
+      <Filter>KactusAPI</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

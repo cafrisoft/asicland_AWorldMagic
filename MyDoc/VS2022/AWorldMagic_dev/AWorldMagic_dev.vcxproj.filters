@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AWorldMagic">
+      <UniqueIdentifier>{dc20439a-7ee6-41b8-9aa9-985ab21203f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Python">
+      <UniqueIdentifier>{6124d2da-5919-4624-9179-d9c37e4275ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI">
+      <UniqueIdentifier>{3a09cba1-2ba3-480c-b1dd-ce8281494f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\FPGATreeWidget">
+      <UniqueIdentifier>{bc9059e5-99ef-4d59-a2d5-3e10dc31fad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\SynthesisDialog">
+      <UniqueIdentifier>{e02990f2-8feb-4d2d-bc48-8c53458fb502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins">
+      <UniqueIdentifier>{05e3244d-2dee-4804-9a5a-e9b7e0a98e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator">
+      <UniqueIdentifier>{3fd4a63b-6ca0-4cc9-987b-988fcece80f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\VerilogWireWriter">
+      <UniqueIdentifier>{66061799-7687-47c5-a7c7-bc0dc3ce0e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\VerilogPortWriter">
+      <UniqueIdentifier>{b53294fb-fcf9-4b93-964f-4c4fee627c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\VerilogInterconnectionWriter">
+      <UniqueIdentifier>{ac303551-7999-4376-a3f6-b8128a51c9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\AAAAA">
+      <UniqueIdentifier>{673c0459-ba31-40f3-85f7-c4c28719a523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\VerilogHeaderWriter">
+      <UniqueIdentifier>{34f29bc8-3637-43a4-bb07-cc18ad876af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\VerilogAssignmentWriter">
+      <UniqueIdentifier>{6e444ae7-f296-474e-a8a9-3b0b1b3ce53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\ComponentVerilogWriter">
+      <UniqueIdentifier>{84cbfcbe-0412-4896-888e-bd21a9c77c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter">
+      <UniqueIdentifier>{01b0f415-0e01-48dc-a455-c845e97711a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\CommentWriter">
+      <UniqueIdentifier>{8d1def26-3bba-4895-8dd2-b3b4f219bff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogGenerator\common">
+      <UniqueIdentifier>{6ac11407-9c24-4804-90f1-a6784cbdb816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\PluginSystem">
+      <UniqueIdentifier>{aa30e22a-f918-4c71-805d-cc5a7e788c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\PluginSystem\GeneratorPlugin">
+      <UniqueIdentifier>{493d267c-b61f-4b62-a736-11c275bf237a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\common">
+      <UniqueIdentifier>{18a845bc-c894-4f0c-8e5e-e2a11ce72c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\common\AAAAA">
+      <UniqueIdentifier>{5fabfbc9-044f-4af8-9141-406eec27be08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\common\PortSorter">
+      <UniqueIdentifier>{fecb2838-13b5-4641-a88f-f7d643ff2eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\common\HDLParser">
+      <UniqueIdentifier>{a3820216-04eb-4fa7-9173-69b1511276db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogImport">
+      <UniqueIdentifier>{e8da0c10-67a4-422c-81b8-f48202a5a571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogIncludeImport">
+      <UniqueIdentifier>{26035873-4f79-4078-85d2-07ee318ac86b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\Plugins\VerilogSourceAnalyzer">
+      <UniqueIdentifier>{0190fd70-6fbc-4e95-a66f-6bd7ccba155f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\Editor">
+      <UniqueIdentifier>{e26fd2d0-2e60-4282-88c3-05ff3a5c19ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\Editor\BusDefinitionEditorEx">
+      <UniqueIdentifier>{35d96c5c-0cf4-414e-8e8a-ecb8c3dee2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure">
+      <UniqueIdentifier>{fe257aeb-bdb5-4aeb-a29a-3b4595867956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AWorldMagic\UI\Editor\ComponentEditorEx">
+      <UniqueIdentifier>{9c38b5a3-c015-4af1-a817-718b3a974708}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Python\PythonSimulate.h">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Python\pythoncom.h">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Python\PythonFPGA.h">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Python\PythonFPGADialog.h">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Python\pythonscriptrunner.h">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\FPGATreeWidget\FPGATreeWidget.h">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\FPGATreeWidget\FPGATreeFilter.h">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\FPGATreeWidget\FPGATreeModel.h">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\FPGATreeWidget\FPGATreeView.h">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\SynthesisDialog\SynthesisDialog.h">
+      <Filter>AWorldMagic\UI\SynthesisDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWireWriter\VerilogWireWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogWireWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogTopDefaultWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogPortWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogInterconnectionWriter\VerilogInterconnectionWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogInterconnectionWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogHeaderWriter\VerilogHeaderWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogHeaderWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogAssignmentWriter\VerilogAssignmentWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogAssignmentWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\ComponentVerilogWriter\ComponentVerilogWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\ComponentVerilogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter\ComponentInstanceVerilogWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\CommentWriter\CommentWriter.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\CommentWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\WriterGroup.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\Writer.h">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\IWriterFactory.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.h">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\ConfigurationManager.h">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\CSourceWriter.h">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\LanguageHighlighter.h">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PluginConfigurationManager.h">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\SourceHighlightStyle.h">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PortSorter\PortSorter.h">
+      <Filter>AWorldMagic\Plugins\common\PortSorter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\PortSorter\InterfaceDirectionNameSorter.h">
+      <Filter>AWorldMagic\Plugins\common\PortSorter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaInstance.h">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\HDLCommandLineParser.h">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\HDLParserCommon.h">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaComponent.h">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaDesign.h">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.h">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogParameterParser.h">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogPortParser.h">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.h">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h">
+      <Filter>AWorldMagic\Plugins\VerilogIncludeImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h">
+      <Filter>AWorldMagic\Plugins\VerilogSourceAnalyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbsDefGroupEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionDefinitionPortsSortFilterEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionDefinitionSignalRowEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsDelegateEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsEditorEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsModelEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsViewEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionWirePortsDelegateEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionWirePortsSortFilterEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\BusDefGroupEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\BusDefinitionEditorEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\LogicalPortColumns.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\SystemGroupListEditorEx.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeSortProxyModel.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeDelegate.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeModel.h">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\ComponentEditorEx\ComponentEditorByProject.h">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\ComponentEditorEx\ComponentEditorEx.h">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UI\Editor\ComponentEditorEx\ItemEditorEx.h">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AWorldMagic_dev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Python\PythonSimulate.cpp">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Python\pythoncom.cpp">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Python\PythonFPGA.cpp">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Python\PythonFPGADialog.cpp">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Python\pythonscriptrunner.cpp">
+      <Filter>AWorldMagic\Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\FPGATreeWidget\FPGATreeFilter.cpp">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\FPGATreeWidget\FPGATreeModel.cpp">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\FPGATreeWidget\FPGATreeView.cpp">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\FPGATreeWidget\FPGATreeWidget.cpp">
+      <Filter>AWorldMagic\UI\FPGATreeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\SynthesisDialog\SynthesisDialog.cpp">
+      <Filter>AWorldMagic\UI\SynthesisDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogWireWriter\VerilogWireWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogWireWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogPortWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogPortWriter\VerilogTopDefaultWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogPortWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogInterconnectionWriter\VerilogInterconnectionWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogInterconnectionWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogHeaderWriter\VerilogHeaderWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogHeaderWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogAssignmentWriter\VerilogAssignmentWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\VerilogAssignmentWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\ComponentVerilogWriter\ComponentVerilogWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\ComponentVerilogWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter\ComponentInstanceVerilogWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\ComponentInstanceVerilogWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\CommentWriter\CommentWriter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\CommentWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogGenerator\common\WriterGroup.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogGenerator\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.cpp">
+      <Filter>AWorldMagic\Plugins\PluginSystem\GeneratorPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\ConfigurationManager.cpp">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\CSourceWriter.cpp">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\LanguageHighlighter.cpp">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\PluginConfigurationManager.cpp">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\SourceHighlightStyle.cpp">
+      <Filter>AWorldMagic\Plugins\common\AAAAA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\PortSorter\InterfaceDirectionNameSorter.cpp">
+      <Filter>AWorldMagic\Plugins\common\PortSorter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\HDLCommandLineParser.cpp">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaComponent.cpp">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaDesign.cpp">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaInstance.cpp">
+      <Filter>AWorldMagic\Plugins\common\HDLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogImporter.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogParameterParser.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogPortParser.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogIncludeImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.cpp">
+      <Filter>AWorldMagic\Plugins\VerilogSourceAnalyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbsDefGroupEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionDefinitionPortsSortFilterEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionDefinitionSignalRowEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsDelegateEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsEditorEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsModelEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionPortsViewEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionWirePortsDelegateEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\AbstractionWirePortsSortFilterEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\BusDefGroupEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\BusDefinitionEditorEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\SystemGroupListEditorEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeDelegate.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeModel.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\BusDefinitionEditorEx\treeStructure\BusDefinitionEditorTreeSortProxyModel.cpp">
+      <Filter>AWorldMagic\UI\Editor\BusDefinitionEditorEx\treeStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\ComponentEditorEx\ComponentEditorByProject.cpp">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\ComponentEditorEx\ComponentEditorEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UI\Editor\ComponentEditorEx\ItemEditorEx.cpp">
+      <Filter>AWorldMagic\UI\Editor\ComponentEditorEx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\.gitignore">
+      <Filter>AWorldMagic\AAAAA</Filter>
+    </None>
+    <None Include="..\..\..\myconfig.sh">
+      <Filter>AWorldMagic\AAAAA</Filter>
+    </None>
+  </ItemGroup>
+</Project>

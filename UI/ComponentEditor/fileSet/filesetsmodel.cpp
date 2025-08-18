@@ -198,8 +198,8 @@ bool FileSetsModel::setData(const QModelIndex& index, const QVariant& value, int
         else if(index.column() == FileSetColumns::GROUP_COLUMN)
         {
             QString str = value.toString();
-//            QStringList groupNames = str.split(' ', Qt::SkipEmptyParts);
-            QStringList groupNames = str.split(' ', QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+            QStringList groupNames = str.split(' ', Qt::SkipEmptyParts);
+//            QStringList groupNames = str.split(' ', QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 
             std::vector<std::string> newGroups;
             for (auto singleGroup : groupNames)

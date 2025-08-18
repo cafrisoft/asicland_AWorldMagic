@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include "awelementwindow.h"
 
 #include <KactusAPI/LibraryHandler.h>

@@ -20,7 +20,7 @@
 #include <QTextStream>
 #include <QFileDialog>
 #include <QColor>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <algorithm>
 
 #include <KactusAPI/KactusColors.h>
@@ -216,7 +216,7 @@ void LogOut::appendInfoLog(QString inputText)
     {
         if (inputText.startsWith(syntaxInfo[i]))
         {
-            inputText.replace(QRegExp("^" + QRegExp::escape(syntaxInfo[i])), "[ INFO ] | ");
+            inputText.replace(QRegularExpression("^" + QRegularExpression::escape(syntaxInfo[i])), "[ INFO ] | ");
             textEdit->setTextColor(QColor(100, 100, 100));
             textEdit->append(inputText);
             break;
@@ -235,7 +235,7 @@ void LogOut::appendWarningLog(QString inputText)
     {
         if (inputText.startsWith(syntaxWarning[i]))
         {
-            inputText.replace(QRegExp("^" + QRegExp::escape(syntaxWarning[i])), "[ WARNING ] | ");
+            inputText.replace(QRegularExpression("^" + QRegularExpression::escape(syntaxWarning[i])), "[ WARNING ] | ");
             textEdit->setTextColor(QColor(100, 100, 100));
             textEdit->append(inputText);
             break;
@@ -254,7 +254,7 @@ void LogOut::appendErrorLog(QString inputText)
     {
         if (inputText.startsWith(syntaxError[i]))
         {
-            inputText.replace(QRegExp("^" + QRegExp::escape(syntaxError[i])), "[ ERROR ] | ");
+            inputText.replace(QRegularExpression("^" + QRegularExpression::escape(syntaxError[i])), "[ ERROR ] | ");
             textEdit->setTextColor(QColor(100, 100, 100));
             textEdit->append(inputText);
             break;

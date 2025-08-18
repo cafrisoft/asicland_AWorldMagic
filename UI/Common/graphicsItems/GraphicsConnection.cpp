@@ -136,8 +136,8 @@ bool GraphicsConnection::connectEnds()
         // The path points have to be reversed.
         for (int i = 0; i < pathPoints_.size() / 2; ++i)
         {
-//            pathPoints_.swapItemsAt(i, pathPoints_.size() - 1 - i);
-            pathPoints_.swap(i, pathPoints_.size() - 1 - i);     //. not surported Qt5.11. 부터 지원
+            pathPoints_.swapItemsAt(i, pathPoints_.size() - 1 - i);
+//            pathPoints_.swap(i, pathPoints_.size() - 1 - i);     //. not surported Qt5.11. 부터 지원
         }
     }
 
@@ -848,8 +848,8 @@ void GraphicsConnection::drawOverlapWithConnection(QPainter* painter, GraphicsCo
                 if (!qFuzzyIsNull(connectionLine.dx())) //<! Discard vertical segments of the intersecting line.
                 {
                     QPointF intersectionPoint;
-//                    QLineF::IntersectType type = pathLine.intersects(connectionLine, &intersectionPoint);
-                    QLineF::IntersectType type = pathLine.intersect(connectionLine, &intersectionPoint);
+                    QLineF::IntersectType type = pathLine.intersects(connectionLine, &intersectionPoint);
+//                    QLineF::IntersectType type = pathLine.intersect(connectionLine, &intersectionPoint);
 
                     if (type == QLineF::BoundedIntersection)
                     {
@@ -947,15 +947,15 @@ void GraphicsConnection::drawOverlapWithComponent(QPainter* painter, QGraphicsIt
         QPointF topPoint;
         QPointF bottomPoint;
 
-//        QLineF::IntersectType leftIntersection = pathLine.intersects(leftEdge, &leftPoint);
-//        QLineF::IntersectType rightIntersection = pathLine.intersects(rightEdge, &rightPoint);
-//        QLineF::IntersectType topIntersection = pathLine.intersects(topEdge, &topPoint);
-//        QLineF::IntersectType bottomIntersection = pathLine.intersects(bottomEdge, &bottomPoint);
+        QLineF::IntersectType leftIntersection = pathLine.intersects(leftEdge, &leftPoint);
+        QLineF::IntersectType rightIntersection = pathLine.intersects(rightEdge, &rightPoint);
+        QLineF::IntersectType topIntersection = pathLine.intersects(topEdge, &topPoint);
+        QLineF::IntersectType bottomIntersection = pathLine.intersects(bottomEdge, &bottomPoint);
 
-        QLineF::IntersectType leftIntersection = pathLine.intersect(leftEdge, &leftPoint);                          //. not surported Qt5.11. 부터 지원
-        QLineF::IntersectType rightIntersection = pathLine.intersect(rightEdge, &rightPoint);                   //. not surported Qt5.11. 부터 지원
-        QLineF::IntersectType topIntersection = pathLine.intersect(topEdge, &topPoint);                         //. not surported Qt5.11. 부터 지원
-        QLineF::IntersectType bottomIntersection = pathLine.intersect(bottomEdge, &bottomPoint);     //. not surported Qt5.11. 부터 지원
+        //QLineF::IntersectType leftIntersection = pathLine.intersect(leftEdge, &leftPoint);                          //. not surported Qt5.11. 부터 지원
+        //QLineF::IntersectType rightIntersection = pathLine.intersect(rightEdge, &rightPoint);                   //. not surported Qt5.11. 부터 지원
+        //QLineF::IntersectType topIntersection = pathLine.intersect(topEdge, &topPoint);                         //. not surported Qt5.11. 부터 지원
+        //QLineF::IntersectType bottomIntersection = pathLine.intersect(bottomEdge, &bottomPoint);     //. not surported Qt5.11. 부터 지원
 
         painter->setPen(QPen(KactusColors::CONNECTION_UNDERCROSSING, pen().width() + 1));
 

@@ -30,7 +30,11 @@ void AWProjectPan::mousePressEvent(QMouseEvent *event)
         menu.addAction("Action 1");
         menu.addAction("Action 2");
         menu.addAction("Action 3");
+#ifdef _WIN32
+        menu.exec(event->globalPosition().toPoint());
+#else
         menu.exec(event->globalPos());
+#endif
     }
 }
 

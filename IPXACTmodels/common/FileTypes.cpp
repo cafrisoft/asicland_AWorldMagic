@@ -39,7 +39,7 @@ QStringList FileTypes::getFileTypes( QSettings& settings, const QString& fileSuf
 		QString extensions = settings.value(type + QStringLiteral("/Extensions")).toString();
 
 //		foreach (QString const& extension, extensions.split(QLatin1Char(';'), Qt::SkipEmptyParts))
-        foreach (QString const& extension, extensions.split(QLatin1Char(';'), QString::SkipEmptyParts))     //. not surported Qt5.11. 부터 지원
+        foreach (QString const& extension, extensions.split(QLatin1Char(';'), Qt::SkipEmptyParts))     //. not surported Qt5.11. 부터 지원
         {
 			if (extension.compare(fileSuffix, Qt::CaseInsensitive) == 0)
             {

@@ -417,8 +417,8 @@ QStringList VerilogPortParser::parsePortNames(QString const& portDeclaration) co
 {
     QString names = PORT_EXP.match(portDeclaration).captured(5);
     
-//    return names.split(QRegularExpression(QStringLiteral("\\s*[,]\\s*")), Qt::SkipEmptyParts);
-    return names.split(QRegularExpression(QStringLiteral("\\s*[,]\\s*")), QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
+    return names.split(QRegularExpression(QStringLiteral("\\s*[,]\\s*")), Qt::SkipEmptyParts);
+//    return names.split(QRegularExpression(QStringLiteral("\\s*[,]\\s*")), QString::SkipEmptyParts);     //. not surported Qt5.11. 부터 지원
 }
 
 //-----------------------------------------------------------------------------
