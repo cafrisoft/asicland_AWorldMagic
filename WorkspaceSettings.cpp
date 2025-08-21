@@ -9,6 +9,8 @@
 // Stores and loads all workspace related settings for the application.
 //-----------------------------------------------------------------------------
 
+#include <GlobalBuildOptions.h>
+
 #include <QActionGroup>
 #include <QSettings>
 #include <QMenu>

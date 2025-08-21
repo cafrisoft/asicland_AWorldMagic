@@ -33,10 +33,3 @@ __pycache__
 ## ignore file ##
 /.qmake.stash
 /Makefile
-/ui_mainwindow.h
-/ui_newdesignexdialog.h
-/ui_newipdialog.h
-/ui_newiodialog.h
-/ui_newprojectdialog.h
-
-

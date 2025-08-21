@@ -29,12 +29,6 @@
     <ClInclude Include="aworldmagicapi_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <QtMoc Include="AWorldMagicAPI.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClCompile Include="AWorldMagicAPI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\..\AWorldMagicAPI\ProjectLibrary.h">
       <Filter>AWorldMagicAPI</Filter>
     </ClInclude>
@@ -55,6 +49,9 @@
     <ClCompile Include="..\..\..\AWorldMagicAPI\ProjectLibraryLoader.cpp">
       <Filter>AWorldMagicAPI</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\AWorldMagicAPI\ProjectLibraryTreeModel.cpp">
+      <Filter>AWorldMagicAPI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="..\..\..\AWorldMagicAPI\FPGAHandler.h">
@@ -62,6 +59,9 @@
     </QtMoc>
     <QtMoc Include="..\..\..\AWorldMagicAPI\ProjectLibraryHandler.h">
       <Filter>AWorldMagicAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\AWorldMagicAPI\ProjectLibraryTreeModel.h">
+      <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>

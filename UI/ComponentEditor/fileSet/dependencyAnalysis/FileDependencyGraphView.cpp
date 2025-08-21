@@ -167,8 +167,11 @@ void FileDependencyGraphView::mousePressEvent(QMouseEvent* event)
         viewport()->repaint();
     }
 
-//    int column = columnAt(event->position().x());
+#ifdef _WIN32
+    int column = columnAt(event->position().x());
+#else
     int column = columnAt(event->x());    //. not surported Qt.6.0 부터 지원
+#endif
 
     // Check if the user pressed over the dependencies column.
     if (column == FileDependencyColumns::DEPENDENCIES)
@@ -543,8 +546,11 @@ void FileDependencyGraphView::selectDependencyUnderCursor(QMouseEvent* event)
 
         if (event->button() == Qt::RightButton && selectedDependency_ != 0)
         {
-//            createContextMenu(event->globalPosition().toPoint());
+#ifdef _WIN32
+            createContextMenu(event->globalPosition().toPoint());
+#else
             createContextMenu(event->globalPos());     //. not surported Qt6.0. 부터 지원
+#endif
         }
     }
 }
@@ -579,8 +585,11 @@ void FileDependencyGraphView::createContextMenuForDependency(QMouseEvent* event)
                     connect(resetAction, SIGNAL(triggered()), this, SLOT(onLocationReset()));
                 }
 
-//                contextMenu.exec(event->globalPosition().toPoint());
+#ifdef _WIN32
+                contextMenu.exec(event->globalPosition().toPoint());
+#else
                 contextMenu.exec(event->globalPos());     //. not surported Qt6.0. 부터 지원
+#endif
             }
         }
     }

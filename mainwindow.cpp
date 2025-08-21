@@ -30,7 +30,11 @@
 
 
 
+#ifdef _WIN32
+#include <common01/SettingManager.h>
+#else
 #include <Common/SettingManager.h>
+#endif
 
 #include <Plugins/VerilogGenerator/VerilogGenerator.h>
 
@@ -94,7 +98,11 @@
 
 #include <UI/WelcomeScreen.h>
 
+#ifdef _WIN32
+#include "common01/utility.h"
+#else
 #include "Common/utility.h"
+#endif
 
 #include "./Python/pythoncom.h"
 #include "./Python/pythonscriptrunner.h"

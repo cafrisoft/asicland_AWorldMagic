@@ -11,7 +11,12 @@
 #include <QFile>
 #include <QByteArray>
 
+#ifdef _WIN32
+#include <common01/SettingManager.h>
+#else
 #include <Common/SettingManager.h>
+#endif
+
 #include <CommandWindow/ConsoleManager.h>
 
 
@@ -27,6 +32,51 @@ QString ConsoleTcl::path_RootScript;
 QString ConsoleTcl::path_GeneralLibrary;
 QString ConsoleTcl::path_DefaultProject;
 
+#ifdef _WIN32
+
+Tcl_Command	Tcl_CreateCommand(Tcl_Interp* interp,
+    const char* cmdName, Tcl_CmdProc* proc,
+    void* clientData,
+    Tcl_CmdDeleteProc* deleteProc) {
+
+    return NULL;
+}
+
+Tcl_Interp* Tcl_CreateInterp(void)
+{
+    return NULL;
+}
+
+void		Tcl_DeleteInterp(Tcl_Interp* interp)
+{
+    return;
+}
+
+int		Tcl_EvalFile(Tcl_Interp* interp,
+    const char* fileName)
+{
+    return 0;
+}
+
+int		Tcl_GetCommandInfo(Tcl_Interp* interp,
+    const char* cmdName, Tcl_CmdInfo* infoPtr)
+{
+    return 0;
+}
+
+int		Tcl_Init(Tcl_Interp* interp)
+{
+    return 0;
+}
+
+int		Tcl_EvalEx(Tcl_Interp* interp, const char* script,
+    Tcl_Size numBytes, int flags)
+{
+    return 0;
+}
+
+
+#endif
 
 
 ConsoleTcl::ConsoleTcl(QWidget *parent) : QObject(parent)
@@ -101,7 +151,7 @@ void ConsoleTcl::tclInterpreter(QString inputCommand)
 
     Tcl_CmdInfo cmdInfo;
 
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_ =NULL;
     consoleTcl_->appendInputMessage(inputCommand);
 
     if (Tcl_GetCommandInfo(inter_tcl, whatCommand.toStdString().c_str(), &cmdInfo))
@@ -137,7 +187,7 @@ QStringList ConsoleTcl::tclResultSender()
 //-----------------------------------------------------------------------------
 void ConsoleTcl::pythonOutputReader(QProcess *process)
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_ = NULL;
 
     while (process->canReadLine())
     {
@@ -344,7 +394,7 @@ void ConsoleTcl::appendUndefinedMessage(QString inputText)
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_debugTcl(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     QString resultText = "[ SYSTEM ] | Debug TCL | TCL Interpreter is Avaliable.";
     outputText.append(resultText);
@@ -361,7 +411,7 @@ int ConsoleTcl::ccTCL_debugTcl(ClientData clientData, Tcl_Interp *interp, int ar
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_reload(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     consoleTcl_->requestReloadProject();
     consoleTcl_->requestReloadProjectLibrary();
@@ -381,7 +431,7 @@ int ConsoleTcl::ccTCL_reload(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_runTcl(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2 || argc > 2)
     {
@@ -427,7 +477,7 @@ int ConsoleTcl::ccTCL_runTcl(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_create(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -796,7 +846,7 @@ int ConsoleTcl::ccTCL_create(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_import(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -877,7 +927,7 @@ int ConsoleTcl::ccTCL_import(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_export(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -971,7 +1021,7 @@ int ConsoleTcl::ccTCL_export(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_open(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1148,7 +1198,7 @@ int ConsoleTcl::ccTCL_open(ClientData clientData, Tcl_Interp *interp, int argc, 
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_close(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1239,7 +1289,7 @@ int ConsoleTcl::ccTCL_close(ClientData clientData, Tcl_Interp *interp, int argc,
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_save(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     consoleTcl_->requestSave();
 
@@ -1256,7 +1306,7 @@ int ConsoleTcl::ccTCL_save(ClientData clientData, Tcl_Interp *interp, int argc, 
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_saveAll(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     consoleTcl_->requestSaveAll();
 
@@ -1273,7 +1323,7 @@ int ConsoleTcl::ccTCL_saveAll(ClientData clientData, Tcl_Interp *interp, int arg
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_copyLib(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1386,7 +1436,7 @@ int ConsoleTcl::ccTCL_copyLib(ClientData clientData, Tcl_Interp *interp, int arg
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_putLib(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1507,7 +1557,7 @@ int ConsoleTcl::ccTCL_putLib(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_autoCon(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     QString resultText = ("[ SYSTEM ] | Auto Connector | Custom Command (Auto Connector) is Avaliable.");
     outputText.append(resultText);
@@ -1524,7 +1574,7 @@ int ConsoleTcl::ccTCL_autoCon(ClientData clientData, Tcl_Interp *interp, int arg
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_autoTop(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1635,7 +1685,7 @@ int ConsoleTcl::ccTCL_autoTop(ClientData clientData, Tcl_Interp *interp, int arg
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_addTop(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1768,7 +1818,7 @@ int ConsoleTcl::ccTCL_addTop(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_connect(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -1898,7 +1948,7 @@ int ConsoleTcl::ccTCL_connect(ClientData clientData, Tcl_Interp *interp, int arg
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_runSim(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {
@@ -2019,7 +2069,7 @@ int ConsoleTcl::ccTCL_runSim(ClientData clientData, Tcl_Interp *interp, int argc
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_runSynth(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     QString resultText = ("[ SYSTEM ] | Synthesis | Custom Command (Synthesis) is Avaliable.");
     outputText.append(resultText);
@@ -2036,7 +2086,7 @@ int ConsoleTcl::ccTCL_runSynth(ClientData clientData, Tcl_Interp *interp, int ar
 //-----------------------------------------------------------------------------
 int ConsoleTcl::ccTCL_runFPGA(ClientData clientData, Tcl_Interp *interp, int argc, const char *argv[])
 {
-    ConsoleTcl *consoleTcl_;
+    ConsoleTcl *consoleTcl_=NULL;
 
     if (argc < 2)
     {

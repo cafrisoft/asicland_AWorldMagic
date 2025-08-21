@@ -37,12 +37,12 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
     <QtInstall>6.2.4</QtInstall>
-    <QtModules>core</QtModules>
+    <QtModules>core;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
     <QtInstall>6.2.4</QtInstall>
-    <QtModules>core</QtModules>
+    <QtModules>core;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -102,7 +102,7 @@
     <!-- Common Plugins -->
     <ClInclude Include="..\..\..\Plugins\common\ConfigurationManager.h" />
     <ClInclude Include="..\..\..\Plugins\common\CSourceWriter.h" />
-    <ClInclude Include="..\..\..\Plugins\common\LanguageHighlighter.h" />
+    <QtMoc Include="..\..\..\Plugins\common\LanguageHighlighter.h" />
     <ClInclude Include="..\..\..\Plugins\common\PluginConfigurationManager.h" />
     <ClInclude Include="..\..\..\Plugins\common\SourceHighlightStyle.h" />
     <ClInclude Include="..\..\..\Plugins\common\PortSorter\InterfaceDirectionNameSorter.h" />
@@ -113,18 +113,18 @@
     <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaDesign.h" />
     <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaInstance.h" />
     <!-- CppSourceAnalyzer -->
-    <ClInclude Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.h" />
+    <QtMoc Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.h" />
     <!-- PluginSystem -->
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h" />
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h" />
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.h" />
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h" />
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h" />
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\IWriterFactory.h" />
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h" />
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h" />
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.h" />
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.h" />
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h" />
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h" />
     <!-- VerilogGenerator -->
-    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.h" />
+    <QtMoc Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogSourceHighlight.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\Writer.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\common\WriterGroup.h" />
@@ -142,15 +142,15 @@
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogDocument.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogWriterFactory.h" />
     <!-- VerilogImport -->
-    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h" />
+    <QtMoc Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogParameterParser.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogPortParser.h" />
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.h" />
     <!-- VerilogIncludeImport -->
-    <ClInclude Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h" />
+    <QtMoc Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h" />
     <!-- VerilogSourceAnalyzer -->
-    <ClInclude Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h" />
+    <QtMoc Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h" />
     <!-- Global -->
     <ClInclude Include="plugins_global.h" />
   </ItemGroup>

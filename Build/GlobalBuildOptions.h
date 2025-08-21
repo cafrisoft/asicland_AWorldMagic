@@ -2,6 +2,8 @@
 
 #ifdef _WIN32
 
+#include <stdio.h>
+
 #define OPEN_DESIGN_TEST 0
 #define AWM_PROJECT 1
 #define CREATE_PROJECT_TEST 1
@@ -68,10 +70,22 @@ typedef unsigned long sem_t;
 
 #define shm_open(a, b, c) 0
 #define ftruncate(fd, size) 
-#define sem_open(name, mode, mode1, flag) NULL
+
+#define PROT_READ 0
+#define PROT_WRITE 0
+#define MAP_SHARED 0
+static inline sem_t* sem_open(const char* name, int mode=0, int flag = 0, int arg4=0) {
+	return 0;
+}
+
 #define SEM_FAILED NULL
 
-#define mmap(a, b, c, d, e) malloc(10)
+
+static inline void* mmap(void* a, int size, int mode, int shared, int fd, int flag) 
+{
+	return NULL;
+}
+
 #define munmap(data, size)
 
 #define MAP_FAILED NULL

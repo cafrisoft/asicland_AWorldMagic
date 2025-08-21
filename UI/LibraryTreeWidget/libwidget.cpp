@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include "libwidget.h"
 #include "iptreeview.h"
 #include "iotreeview.h"

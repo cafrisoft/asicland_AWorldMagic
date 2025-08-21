@@ -142,7 +142,7 @@ void LineContentAssistWidget::updateAssist(QKeyEvent* e)
     }
 
     // Invoke the content assist for certain keys.
-    if (e == 0 || (e->text().contains(QRegularExpression("^[a-z|A-z|0-9|_|Ä|ä|Ö|ö|Å|å|(|)|,|&]$")) ||
+    if (e == 0 || (e->text().contains(QRegularExpression("^[a-z|A-z|0-9|_|??????(|)|,|&]$")) ||
         e->key() == Qt::Key_Backspace || e->key() == Qt::Key_Return ||
         e->key() == Qt::Key_Down || e->key() == Qt::Key_Up ||
         (contentFound_ && e->text().contains(' '))))
@@ -254,7 +254,7 @@ void LineContentAssistWidget::moveClose(int /*cursorPos*/)
 //-----------------------------------------------------------------------------
 bool LineContentAssistWidget::canCommitWith(QKeyEvent* e) const
 {
-    return (!e->text().contains(QRegularExpression("^[a-z|A-z|0-9|_|Ä|ä|Ö|ö|Å|å]$")) &&
+    return (!e->text().contains(QRegularExpression("^[a-z|A-z|0-9|_|??????$")) &&
             e->key() != Qt::Key_Backspace && e->key() != Qt::Key_Escape &&
             e->key() != Qt::Key_Up && e->key() != Qt::Key_Down &&
             e->key() != Qt::Key_Left && e->key() != Qt::Key_Right &&

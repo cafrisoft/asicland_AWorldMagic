@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include "PythonSimulate.h"
 
 #include <QSettings>

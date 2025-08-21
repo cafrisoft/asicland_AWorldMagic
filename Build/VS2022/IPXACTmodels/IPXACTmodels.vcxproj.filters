@@ -72,6 +72,12 @@
     <Filter Include="IPXACTmodels\designConfiguration\validators">
       <UniqueIdentifier>{179f6ea2-94fc-4e98-9def-0ee626cb9d9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IPXACTmodels\Catalog">
+      <UniqueIdentifier>{c47c24d5-d291-4f2c-a167-66642eaf4dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPXACTmodels\Catalog\validator">
+      <UniqueIdentifier>{73871f1b-a806-4654-8b3c-c1e3f323d576}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ipxactmodels_global.h">
@@ -784,6 +790,21 @@
     </ClInclude>
     <ClInclude Include="..\..\..\IPXACTmodels\designConfiguration\validators\ViewConfigurationValidator.h">
       <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\Catalog.h">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\CatalogReader.h">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\CatalogWriter.h">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\IpxactFile.h">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\validators\CatalogValidator.h">
+      <Filter>IPXACTmodels\Catalog\validator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1539,6 +1560,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\IPXACTmodels\designConfiguration\validators\ViewConfigurationValidator.cpp">
       <Filter>IPXACTmodels\designConfiguration\validators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\Catalog.cpp">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\CatalogReader.cpp">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\CatalogWriter.cpp">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\IpxactFile.cpp">
+      <Filter>IPXACTmodels\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\validators\CatalogValidator.cpp">
+      <Filter>IPXACTmodels\Catalog\validator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -24,7 +24,11 @@
 
 #include <KactusAPI/IPXactSystemVerilogParser.h>
 
+#ifdef _WIN32
+#include <common01/expressions/utilities.h>
+#else
 #include <Common/expressions/utilities.h>
+#endif
 
 #include "VerilogParameterParser.h"
 #include "VerilogSyntax.h"

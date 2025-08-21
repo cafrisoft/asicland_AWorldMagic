@@ -145,7 +145,11 @@ void ProjectTreeWidgetEx::mousePressEvent(QMouseEvent *event) {
       connect(&action2, &QAction::triggered, this, &ProjectTreeWidgetEx::menuItem2Clicked);
       contextMenu.addAction(&action2);
 
+#ifdef _WIN32
+      contextMenu.exec(event->globalPosition().toPoint());
+#else
       contextMenu.exec(event->globalPos());
+#endif
     } else {
       QWidget::mousePressEvent(event);
     }

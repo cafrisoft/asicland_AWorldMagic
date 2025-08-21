@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include "pythoncom.h"
 #include <QProcess>
 #include <QDebug>

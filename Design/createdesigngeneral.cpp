@@ -1,3 +1,5 @@
+#include <GlobalBuildOptions.h>
+
 #include "createdesigngeneral.h"
 
 #if LIBRARYINTERFACE_TEST_20231206 == 0

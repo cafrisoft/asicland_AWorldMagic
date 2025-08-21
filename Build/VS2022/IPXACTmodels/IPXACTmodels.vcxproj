@@ -116,6 +116,11 @@
     <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionReader.h" />
     <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionWriter.h" />
     <ClInclude Include="..\..\..\IPXACTmodels\BusDefinition\validators\BusDefinitionValidator.h" />
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\Catalog.h" />
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\CatalogReader.h" />
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\CatalogWriter.h" />
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\IpxactFile.h" />
+    <ClInclude Include="..\..\..\IPXACTmodels\Catalog\validators\CatalogValidator.h" />
     <ClInclude Include="..\..\..\IPXACTmodels\common\AccessTypes.h" />
     <ClInclude Include="..\..\..\IPXACTmodels\common\Array.h" />
     <ClInclude Include="..\..\..\IPXACTmodels\common\Assertion.h" />
@@ -376,6 +381,11 @@
     <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionReader.cpp" />
     <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\BusDefinitionWriter.cpp" />
     <ClCompile Include="..\..\..\IPXACTmodels\BusDefinition\validators\BusDefinitionValidator.cpp" />
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\Catalog.cpp" />
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\CatalogReader.cpp" />
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\CatalogWriter.cpp" />
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\IpxactFile.cpp" />
+    <ClCompile Include="..\..\..\IPXACTmodels\Catalog\validators\CatalogValidator.cpp" />
     <ClCompile Include="..\..\..\IPXACTmodels\common\AccessTypes.cpp" />
     <ClCompile Include="..\..\..\IPXACTmodels\common\Array.cpp" />
     <ClCompile Include="..\..\..\IPXACTmodels\common\Assertion.cpp" />

@@ -59,7 +59,11 @@
 #include <KactusAPI/ParametersInterface.h>
 #include <KactusAPI/ComponentParameterFinder.h>
 
+#ifdef _WIN32
+#include <common01/ui/GraphicalMessageMediator.h>
+#else
 #include <Common/ui/GraphicalMessageMediator.h>
+#endif
 
 //#include <UI/Widgets/ParameterGroupBox/parametergroupbox.h>
 

@@ -238,8 +238,10 @@ unsigned int RegisterGraphItem::findHighestReservedBit()
 
     if (!childItems_.isEmpty())
     {
-        for (auto i = childItems_.cend() - 1; i != childItems_.cbegin() - 1; --i)
+        auto i = childItems_.cend();
+        while (i != childItems_.cbegin())
         {
+            --i;
             MemoryVisualizationItem* current = i.value();
             if (current->getLastAddress() > highestBit && current->isPresent())
             {
@@ -284,8 +286,10 @@ void RegisterGraphItem::fillGapsBetweenChildren()
 
     if (!childItems_.isEmpty())
     {
-        for (auto i = childItems_.end() - 1; i != childItems_.begin() - 1; --i)
+        auto i = childItems_.end();
+        while (i != childItems_.begin())
         {
+            --i;
             MemoryVisualizationItem const* current = i.value();
             if (current->isPresent())
             {
@@ -340,8 +344,10 @@ void RegisterGraphItem::markConflictingChildren()
     // QMap sorts children by ascending keys. This must iterate children from largest to smallest key (MSB).     
     if (!childItems_.isEmpty())
     {
-        for (auto child = childItems_.end() - 1; child != childItems_.begin() - 1; --child)
+        auto child = childItems_.end();
+        while (child != childItems_.begin())
         {
+            --child;
             MemoryVisualizationItem* current = child.value();
             if (current->isPresent())
             {
@@ -352,9 +358,11 @@ void RegisterGraphItem::markConflictingChildren()
                 if (overlaps)
                 {
                     // Walk in the opposite direction and mark any overlapping items conflicted.
-                    for (auto previous = child + 1; previous != childItems_.end(); ++previous)
+                    auto previous = child;
+                    while (previous != childItems_.end())
                     {
-                        if ((*previous)->getOffset() <= current->getLastAddress())
+                        ++previous;
+                        if (previous != childItems_.end() && (*previous)->getOffset() <= current->getLastAddress())
                         {
                             (*previous)->setConflicted(true);
                         }

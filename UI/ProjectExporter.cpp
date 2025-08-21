@@ -22,7 +22,11 @@
 #include <IPXACTmodels/Component/FileSet.h>
 #include <IPXACTmodels/Component/File.h>
 
+#ifdef _WIN32
+#include <common01/SettingManager.h>
+#else
 #include <Common/SettingManager.h>
+#endif
 
 #include <UI/Dialogs/ProjectExportDialog/ProjectExportDialog.h>
 

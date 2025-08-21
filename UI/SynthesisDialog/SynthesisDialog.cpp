@@ -8,7 +8,11 @@
 #include <QMessageBox>
 #include <QtConcurrent/QtConcurrent>
 
+#ifdef _WIN32
+#include <common01/SettingManager.h>
+#else
 #include <Common/SettingManager.h>
+#endif
 #include "CommandWindow/CommandWindow.h"
 
 

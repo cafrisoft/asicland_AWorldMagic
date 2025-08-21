@@ -333,8 +333,10 @@ void MemoryVisualizationItem::markConflictingChildren()
             if (overlaps)
             {
                 // Walk backwards and mark any overlapping items conflicted.
-                for (auto previous = child - 1; previous != childItems_.begin() - 1; --previous)
+                auto previous = child;
+                while (previous != childItems_.begin())
                 {
+                    --previous;
                     if ((*previous)->getLastAddress() >= currentOffset)
                     {
                         (*previous)->setConflicted(true);

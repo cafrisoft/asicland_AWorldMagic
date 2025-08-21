@@ -35,58 +35,22 @@
     <QtUic Include="AWorldMagic.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="AWorldMagic.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\GlobalBuildOptions.h">
       <Filter>AWorldMagic\Build</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\mainwindow.h">
-      <Filter>AWorldMagic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\singleton.h">
-      <Filter>AWorldMagic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\awprojectpan.h">
-      <Filter>AWorldMagic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\awsidetoolbar.h">
-      <Filter>AWorldMagic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\awcodeedittab.h">
-      <Filter>AWorldMagic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\awelementwindow.h">
-      <Filter>AWorldMagic</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>AWorldMagic</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\mainwindow.cpp">
-      <Filter>AWorldMagic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\singleton.cpp">
-      <Filter>AWorldMagic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\awsidetoolbar.cpp">
-      <Filter>AWorldMagic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\awelementwindow.cpp">
-      <Filter>AWorldMagic</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\awprojectpan.cpp">
-      <Filter>AWorldMagic</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\BaseLayOut.pro">
+    <None Include="..\..\..\.gitignore">
       <Filter>AWorldMagic</Filter>
     </None>
-    <None Include="..\..\..\.gitignore">
+    <None Include="..\..\..\BaseLayOut.pro">
       <Filter>AWorldMagic</Filter>
     </None>
   </ItemGroup>

@@ -61,7 +61,11 @@ itemMatcher_(itemMatcher)
 void AutoConnectorConnectionTable::setupActions()
 {
     QList<QKeySequence> addRowShortcuts;
+#ifdef _WIN32
+    addRowShortcuts << QKeySequence::InsertLineSeparator << (Qt::SHIFT | Qt::Key_Return);
+#else
     addRowShortcuts << QKeySequence::InsertLineSeparator << Qt::SHIFT + Qt::Key_Return;
+#endif
 
     addAction(addRowAction_);
     addRowAction_->setToolTip(tr("Add a new row to table"));
@@ -73,7 +77,11 @@ void AutoConnectorConnectionTable::setupActions()
     addAction(removeRowAction_);
     removeRowAction_->setToolTip(tr("Remove a connection from the table"));
     removeRowAction_->setStatusTip(tr("Remove a connection from the table"));
+#ifdef _WIN32
+    removeRowAction_->setShortcut(Qt::SHIFT | Qt::Key_Delete);
+#else
     removeRowAction_->setShortcut(Qt::SHIFT + Qt::Key_Delete);
+#endif
     removeRowAction_->setShortcutContext(Qt::WidgetShortcut);
     connect(removeRowAction_, SIGNAL(triggered()), this, SLOT(onRemoveRow()), Qt::UniqueConnection);
 
@@ -208,8 +216,11 @@ void AutoConnectorConnectionTable::dragMoveEvent(QDragMoveEvent *event)
 {
     QTableWidget::dragMoveEvent(event);
 
-//    QModelIndex positionIndex = indexAt(event->position().toPoint());
+#ifdef _WIN32
+    QModelIndex positionIndex = indexAt(event->position().toPoint());
+#else
     QModelIndex positionIndex = indexAt(event->posF().toPoint());    //. not surported Qt.6.0 부터 지원
+#endif
     if (positionIndex.isValid() && itemMatcher_)
     {
         QSharedPointer<Component> sourceComponent = firstComponent_;

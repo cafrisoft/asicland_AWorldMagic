@@ -1,6 +1,10 @@
 #include <IPXACTmodels/common/VLNV.h>
 
+#ifdef _WIN32
+#include <common01/SettingManager.h>
+#else
 #include <Common/SettingManager.h>
+#endif
 
 #include "UI/MessageBox/awmmessagebox.h"
 

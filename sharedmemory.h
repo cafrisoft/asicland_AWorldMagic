@@ -1,6 +1,8 @@
 #ifndef SHAREDMEMORY_H
 #define SHAREDMEMORY_H
 
+#include <GlobalBuildOptions.h>
+
 #include <iostream>
 using namespace std;
 
