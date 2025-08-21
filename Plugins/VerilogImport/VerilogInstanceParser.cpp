@@ -18,7 +18,11 @@
 
 #include <KactusAPI/ImportColors.h>
 
+#ifdef _WIN32
+#include <common01/expressions/utilities.h>
+#else
 #include <Common/expressions/utilities.h>
+#endif
 
 #include <UI/wizards/ComponentWizard/InstanceData.h>
 

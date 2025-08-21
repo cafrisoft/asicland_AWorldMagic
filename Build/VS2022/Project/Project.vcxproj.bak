@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{02C26616-4C29-48A0-BBBC-3140C3C36290}</ProjectGuid>
+    <ProjectGuid>{0390FC9E-BB32-4ABC-8758-BBA0ACBEE291}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0</WindowsTargetPlatformVersion>
@@ -19,13 +19,13 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v143</PlatformToolset>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v143</PlatformToolset>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -37,12 +37,12 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
     <QtInstall>6.2.4</QtInstall>
-    <QtModules>core;gui;qml;widgets;printsupport;svg;xml</QtModules>
+    <QtModules>core</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
     <QtInstall>6.2.4</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -65,16 +65,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(Project_Dir)..\..\..\;$(Project_Dir)..\..\..\Build;C:\QT\6.2.4\install\include\QtXml;C:\QT\6.2.4\install\include\QtWidgets;C:\QT\6.2.4\install\include\QtGui;C:\QT\6.2.4\install\include\QtSvg;C:\QT\6.2.4\install\include\QtPrintSupport;C:\QT\Win-Package\tcltk90-9.1a0.0.Win10.nightly.20250712\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(Project_Dir)..\..\..\;$(Project_Dir)..\..\..\Build;C:\QT\win-package\tcltk90-9.1a0.0.Win10.nightly.20250712\include;C:\QT\6.2.4\install\include\QtXml;C:\QT\6.2.4\install\include\QtWidgets;C:\QT\6.2.4\install\include\QtGui;C:\QT\6.2.4\install\include\QtPrintSupport;C:\QT\6.2.4\install\include\QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>C:\QT\Win-Package\tcltk90-9.1a0.0.Win10.nightly.20250712\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>PROJECT_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
@@ -87,6 +84,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>PROJECT_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
@@ -101,66 +99,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="AWorldMagic.qrc" />
-    <QtUic Include="AWorldMagic.ui" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="project_global.h" />
+    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectgeneral.h" />
+    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectleftmenu.h" />
+    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectmain.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AWorldMagicAPI\AWorldMagicAPI.vcxproj">
-      <Project>{4ef79bb4-62c5-49f5-9040-e2e1aa8065d5}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\AWorldMagicLib\AWorldMagicLib.vcxproj">
-      <Project>{80560421-6e49-4c35-abce-c597001eaa6a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\CommandWindow\CommandWindow.vcxproj">
-      <Project>{fe9e0725-45cb-424f-b0de-b81d543bba82}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\common01\common01.vcxproj">
-      <Project>{7bf63ed2-c9fe-4dc7-82b7-b488203301c1}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Constructor\Constructor.vcxproj">
-      <Project>{bbc1d1d4-285d-4b41-850d-269394a929c8}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Design\Design.vcxproj">
-      <Project>{aa6a4323-4835-45e3-9683-4ac94961e70e}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Editor\Editor.vcxproj">
-      <Project>{6941e123-1a4a-4830-9eca-547a436b7c4c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\IO\IO.vcxproj">
-      <Project>{7d9ca806-40e8-4892-8ae6-e085f2053c33}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\IPXACTmodels\IPXACTmodels.vcxproj">
-      <Project>{e389ef70-8c65-4b67-a993-ce02bfadcc54}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\IP\IP.vcxproj">
-      <Project>{47ea09a0-b601-4fc4-9437-e9be67311d65}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\KactusAPI\KactusAPI.vcxproj">
-      <Project>{78ef3875-840f-4fc8-964d-77262692fbef}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Plugins\Plugins.vcxproj">
-      <Project>{c3356738-03c5-44aa-905c-ec947ce5a3c7}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Project\Project.vcxproj">
-      <Project>{0390fc9e-bb32-4abc-8758-bba0acbee291}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Python\Python.vcxproj">
-      <Project>{511f0f43-1a5d-4c37-8ff3-b0a89a2aa18d}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\UI\UI.vcxproj">
-      <Project>{6c337f1d-9a14-4cee-bb25-00a513c3fb0c}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\GlobalBuildOptions.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\.gitignore" />
-    <None Include="..\..\..\BaseLayOut.pro">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </None>
+    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectgeneral.cpp" />
+    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectleftmenu.cpp" />
+    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectmain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -100,14 +100,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="project_global.h" />
-    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectgeneral.h" />
-    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectleftmenu.h" />
-    <ClInclude Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectmain.h" />
+    <ClInclude Include="..\..\..\Project\createprojectgeneral.h" />
+    <ClInclude Include="..\..\..\Project\createprojectleftmenu.h" />
+    <ClInclude Include="..\..\..\Project\createprojectmain.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectgeneral.cpp" />
-    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectleftmenu.cpp" />
-    <ClCompile Include="Y:\dev2\gitdev\al_sw_tools\AWorldMagic\Project\createprojectmain.cpp" />
+    <ClCompile Include="..\..\..\Project\createprojectgeneral.cpp" />
+    <ClCompile Include="..\..\..\Project\createprojectleftmenu.cpp" />
+    <ClCompile Include="..\..\..\Project\createprojectmain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
