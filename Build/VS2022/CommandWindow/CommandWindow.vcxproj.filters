@@ -29,27 +29,6 @@
     <ClInclude Include="commandwindow_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\CommandWindow.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\ConsoleManager.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\ConsoleTcl.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\ConsolLogTab.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\LogOut.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\LogOutTab.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\CommandWindow\MessageConsole.h">
-      <Filter>CommandWindow</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\CommandWindow\CommandWindow.cpp">
@@ -73,5 +52,28 @@
     <ClCompile Include="..\..\..\CommandWindow\MessageConsole.cpp">
       <Filter>CommandWindow</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\CommandWindow\CommandWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\ConsoleManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\ConsoleTcl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\ConsolLogTab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\LogOut.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\LogOutTab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\CommandWindow\MessageConsole.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

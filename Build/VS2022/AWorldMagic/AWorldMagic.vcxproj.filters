@@ -53,5 +53,8 @@
     <None Include="..\..\..\BaseLayOut.pro">
       <Filter>AWorldMagic</Filter>
     </None>
+    <None Include="AWorldMagic.Debug.x64.props">
+      <Filter>AWorldMagic</Filter>
+    </None>
   </ItemGroup>
 </Project>

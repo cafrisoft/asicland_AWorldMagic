@@ -96,15 +96,11 @@
     <ClInclude Include="plugins_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    
     <!-- Common Plugins -->
     <ClInclude Include="..\..\..\Plugins\common\ConfigurationManager.h">
       <Filter>Plugins\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Plugins\common\CSourceWriter.h">
-      <Filter>Plugins\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Plugins\common\LanguageHighlighter.h">
       <Filter>Plugins\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Plugins\common\PluginConfigurationManager.h">
@@ -134,26 +130,12 @@
     <ClInclude Include="..\..\..\Plugins\common\HDLParser\MetaInstance.h">
       <Filter>Plugins\Common\HDLParser</Filter>
     </ClInclude>
-    
     <!-- CppSourceAnalyzer -->
-    <ClInclude Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.h">
-      <Filter>Plugins\CppSourceAnalyzer</Filter>
-    </ClInclude>
-    
     <!-- PluginSystem -->
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h">
-      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\GenerationControl.h">
       <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h">
-      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\IWriterFactory.h">
-      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h">
       <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\OutputControl.h">
@@ -162,14 +144,7 @@
     <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelection.h">
       <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h">
-      <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
-    </ClInclude>
-    
     <!-- VerilogGenerator -->
-    <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.h">
-      <Filter>Plugins\VerilogGenerator</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogSourceHighlight.h">
       <Filter>Plugins\VerilogGenerator</Filter>
     </ClInclude>
@@ -218,11 +193,7 @@
     <ClInclude Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogWriterFactory.h">
       <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
     </ClInclude>
-    
     <!-- VerilogImport -->
-    <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h">
-      <Filter>Plugins\VerilogImport</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogInstanceParser.h">
       <Filter>Plugins\VerilogImport</Filter>
     </ClInclude>
@@ -235,16 +206,8 @@
     <ClInclude Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.h">
       <Filter>Plugins\VerilogImport</Filter>
     </ClInclude>
-    
     <!-- VerilogIncludeImport -->
-    <ClInclude Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h">
-      <Filter>Plugins\VerilogIncludeImport</Filter>
-    </ClInclude>
-    
     <!-- VerilogSourceAnalyzer -->
-    <ClInclude Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h">
-      <Filter>Plugins\VerilogSourceAnalyzer</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <!-- Common Plugins -->
@@ -278,12 +241,10 @@
     <ClCompile Include="..\..\..\Plugins\common\HDLParser\MetaInstance.cpp">
       <Filter>Plugins\Common\HDLParser</Filter>
     </ClCompile>
-    
     <!-- CppSourceAnalyzer -->
     <ClCompile Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.cpp">
       <Filter>Plugins\CppSourceAnalyzer</Filter>
     </ClCompile>
-    
     <!-- PluginSystem -->
     <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.cpp">
       <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
@@ -306,7 +267,6 @@
     <ClCompile Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.cpp">
       <Filter>Plugins\PluginSystem\GeneratorPlugin</Filter>
     </ClCompile>
-    
     <!-- VerilogGenerator -->
     <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.cpp">
       <Filter>Plugins\VerilogGenerator</Filter>
@@ -356,7 +316,6 @@
     <ClCompile Include="..\..\..\Plugins\VerilogGenerator\VerilogWriterFactory\VerilogWriterFactory.cpp">
       <Filter>Plugins\VerilogGenerator\VerilogWriterFactory</Filter>
     </ClCompile>
-    
     <!-- VerilogImport -->
     <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogImporter.cpp">
       <Filter>Plugins\VerilogImport</Filter>
@@ -373,15 +332,45 @@
     <ClCompile Include="..\..\..\Plugins\VerilogImport\VerilogSyntax.cpp">
       <Filter>Plugins\VerilogImport</Filter>
     </ClCompile>
-    
     <!-- VerilogIncludeImport -->
     <ClCompile Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.cpp">
       <Filter>Plugins\VerilogIncludeImport</Filter>
     </ClCompile>
-    
     <!-- VerilogSourceAnalyzer -->
     <ClCompile Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.cpp">
       <Filter>Plugins\VerilogSourceAnalyzer</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\Plugins\common\LanguageHighlighter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\CppSourceAnalyzer\CppSourceAnalyzer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\FileOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\HDLGenerationDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\MessagePasser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\PluginSystem\GeneratorPlugin\ViewSelectionWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\VerilogGenerator\VerilogGenerator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\VerilogImport\VerilogImporter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\VerilogIncludeImport\VerilogIncludeImport.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Plugins\VerilogSourceAnalyzer\VerilogSourceAnalyzer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

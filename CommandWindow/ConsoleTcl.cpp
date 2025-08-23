@@ -32,8 +32,7 @@ QString ConsoleTcl::path_RootScript;
 QString ConsoleTcl::path_GeneralLibrary;
 QString ConsoleTcl::path_DefaultProject;
 
-#ifdef _WIN32
-
+#ifdef USE_AL_TCLLIB
 Tcl_Command	Tcl_CreateCommand(Tcl_Interp* interp,
     const char* cmdName, Tcl_CmdProc* proc,
     void* clientData,
@@ -52,14 +51,12 @@ void		Tcl_DeleteInterp(Tcl_Interp* interp)
     return;
 }
 
-int		Tcl_EvalFile(Tcl_Interp* interp,
-    const char* fileName)
+int		Tcl_EvalFile(Tcl_Interp* interp,   const char* fileName)
 {
     return 0;
 }
 
-int		Tcl_GetCommandInfo(Tcl_Interp* interp,
-    const char* cmdName, Tcl_CmdInfo* infoPtr)
+int		Tcl_GetCommandInfo(Tcl_Interp* interp,   const char* cmdName, Tcl_CmdInfo* infoPtr)
 {
     return 0;
 }
@@ -69,14 +66,11 @@ int		Tcl_Init(Tcl_Interp* interp)
     return 0;
 }
 
-int		Tcl_EvalEx(Tcl_Interp* interp, const char* script,
-    Tcl_Size numBytes, int flags)
+int		Tcl_EvalEx(Tcl_Interp* interp, const char* script, Tcl_Size numBytes, int flags)
 {
     return 0;
 }
-
-
-#endif
+#endif // end of '#ifdef USE_AL_TCLLIB'
 
 
 ConsoleTcl::ConsoleTcl(QWidget *parent) : QObject(parent)

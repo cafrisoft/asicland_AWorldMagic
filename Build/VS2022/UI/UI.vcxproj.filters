@@ -107,19 +107,7 @@
     <ClInclude Include="..\..\..\UI/Common/ComponentInstanceEditor/ParameterConfigurableElementsFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorConnectionDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorConnectionTable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorListFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Common/ComponentItemAutoConnector/BusInterfaceItemMatcher.h">
@@ -266,9 +254,6 @@
     <ClInclude Include="..\..\..\UI/HWDesign/undoCommands/TopAdHocVisibilityChangeCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/HWDesign/OffPageConnectorItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/HWDesign/HWMoveCommands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -281,15 +266,6 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesConstants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/BusInterfaceColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -299,67 +275,16 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/BusIfInterfaceMirroredMaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgesdelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgeseditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgesmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifgeneraldetails.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemaster.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemodeeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemonitor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemslave.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfaceslave.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacesystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/general/interfacemodestack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/JaroWinklerAlgorithm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortListSortProxyModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapDelegate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapHeaderView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapSortFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMappingColumns.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMappingTableModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMappingTableView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapsColumns.h">
@@ -371,15 +296,6 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/common/DesignConfigurationInstantiationParameterFinder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/common/EnumerationEditorConstructorDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/common/ExpressionEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/common/InstantiationConfigurableElementEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/common/MasterExpressionEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -387,12 +303,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/fileBuilders/FileBuilderColumns.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileBuilders/filebuildersdelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileBuilders/filebuildersmodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationDisplayer.h">
@@ -404,19 +314,7 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationsColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationsModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignConfigurationInstantiationEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignConfigurationInstantiationsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignConfigurationInstantiationsModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationColumns.h">
@@ -425,46 +323,16 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/InstantiationsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterHeaderView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefeditordelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefmodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/parameters/ComponentParameterColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/parameters/ParameterColumns.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/parameters/ChoiceCreatorDelegate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/parameters/Array/ArrayColumns.h">
@@ -551,15 +419,6 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/SingleAddressBlockEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -582,57 +441,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapColumns.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapsEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/WriteValueConstraintComboBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockdelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/enumeratedvaluedelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/enumeratedvaluemodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/fieldeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapdelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/registereditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfiledelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfileeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfilemodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/registertablemodel.h">
@@ -671,9 +479,6 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/memoryMaps/memoryMapsVisualizer/registergraphitem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/accessComboBox/accesscombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/assistedLineEdit/BasicLineContentMatcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -683,61 +488,10 @@
     <ClInclude Include="..\..\..\UI/Widgets/assistedLineEdit/LineContentAssistWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/booleanComboBox/booleancombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/busReferenceComboBox/BusReferenceComboBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/fileTypeSelector/filetypeselector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/listManager/dirlistmanagermodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/modWriteComboBox/modwritecombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/readActionComboBox/readactioncombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/segmentComboBox/SegmentComboBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/EnumCollectionEditor/EnumCollectionEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/EnumCollectionEditor/EnumerationEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/ParameterGroupBox/parametergroupbox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/interfaceSelector/interfaceselector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/tagEditor/FlowLayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/tagEditor/TagSelector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/tagEditor/TagSelectorContainer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/testConstraintComboBox/testconstraintcombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/usageComboBox/usagecombobox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/FilterGroup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/dialerwidget.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/filterwidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/firmnessgroup.h">
@@ -750,9 +504,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/typegroup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Widgets/VLNVDialer/vlnvdialer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Widgets/vlnvEditor/VLNVContentMatcher.h">
@@ -839,15 +590,6 @@
     <ClInclude Include="..\..\..\UI/HWDesign/PortmapDialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/Delegates/ComboDelegate/combodelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Dialogs/comboSelector/comboselector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Dialogs/createConfigurationDialog/createconfigurationdialog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/Dialogs/LibrarySettingsDialog/LibrarySettingsColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -858,9 +600,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Dialogs/ObjectSelectionDialog/ObjectSelectionListItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/SystemDesign/SWConnectionEndpoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/FileSetColumns.h">
@@ -875,58 +614,19 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/FileColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filebuildcommand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filedefinemodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filedefineview.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filegeneraleditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filenameeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filesmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filesview.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filetypeeditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/fileSet/file/filetypeeditordelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortTagEditorDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortTypeDefinitionDelegate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortTypeDefinitionEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeEditor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortsEditorConstructor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/ports/PortsFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ComponentEditor/ports/TransactionalPortColumns.h">
@@ -1028,9 +728,6 @@
     <ClInclude Include="..\..\..\UI/ComponentEditor/views/ViewColumns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\UI/ComponentEditor/views/envidentifiersmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI/wizards/ComponentWizard/ComponentWizardDependencyPage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -1107,9 +804,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/Dialogs/ProjectSelectionDialog/ProjectSelectionListItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI/Dialogs/ProjectSelectionDialog/ProjectSelectionDialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\UI/ProjectItemSelectionFactory.h">
@@ -3870,6 +3564,312 @@
     <QtMoc Include="..\..\..\UI/WorkingIndicator.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorConnectionDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorConnectionTable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Common/ComponentItemAutoConnector/AutoConnectorListFilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/HWDesign/OffPageConnectorItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/AbstractionTypesModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgesdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgeseditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/bridgesmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifgeneraldetails.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemodeeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemonitor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacemslave.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfaceslave.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/busifinterfacesystem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/general/interfacemodestack.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortListSortProxyModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMapView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMappingTableModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/busInterfaces/portmaps/PortMappingTableView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/common/EnumerationEditorConstructorDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/common/ExpressionEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/common/InstantiationConfigurableElementEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileBuilders/filebuildersdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileBuilders/filebuildersmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/ComponentInstantiationsModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/DesignConfigurationInstantiationsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/DesignConfigurationInstantiationsModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/DesignInstantiationsModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/InstantiationsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/ModuleParameterModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefeditordelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/instantiations/filesetrefmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/parameters/ChoiceCreatorDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/ResetsModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/SubspaceMapsEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/WriteValueConstraintComboBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/addressblockmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/enumeratedvaluedelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/enumeratedvaluemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/fieldeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/memorymapmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/registereditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfiledelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfileeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/memoryMaps/registerfilemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/accessComboBox/accesscombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/booleanComboBox/booleancombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/busReferenceComboBox/BusReferenceComboBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/fileTypeSelector/filetypeselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/listManager/dirlistmanagermodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/modWriteComboBox/modwritecombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/readActionComboBox/readactioncombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/segmentComboBox/SegmentComboBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/EnumCollectionEditor/EnumCollectionEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/EnumCollectionEditor/EnumerationEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/ParameterGroupBox/parametergroupbox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/interfaceSelector/interfaceselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/tagEditor/TagSelector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/tagEditor/TagSelectorContainer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/testConstraintComboBox/testconstraintcombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/usageComboBox/usagecombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/VLNVDialer/dialerwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/VLNVDialer/filterwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Widgets/VLNVDialer/vlnvdialer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Delegates/ComboDelegate/combodelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Dialogs/comboSelector/comboselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Dialogs/createConfigurationDialog/createconfigurationdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/SystemDesign/SWConnectionEndpoint.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filebuildcommand.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filegeneraleditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filenameeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filesmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filesview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filetypeeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/fileSet/file/filetypeeditordelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortTagEditorDelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortTypeDefinitionEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortWireTypeView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/ports/PortsFilter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/ComponentEditor/views/envidentifiersmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\UI/Dialogs/ProjectSelectionDialog/ProjectSelectionDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\UI\GraphicalMessageMediator\GraphicalMessageMediator.cpp">
@@ -3946,12 +3946,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageDialog.h">
-      <Filter>UI\Dialogs\propertyPageDialog</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\UI\Dialogs\propertyPageDialog\PropertyPageView.h">
-      <Filter>UI\Dialogs\propertyPageDialog</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\UI\Settings\FileTypeColumns.h">
       <Filter>UI\Settings</Filter>
     </ClInclude>

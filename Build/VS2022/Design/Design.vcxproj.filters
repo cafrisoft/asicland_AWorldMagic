@@ -29,33 +29,6 @@
     <ClInclude Include="design_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesigndetail.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesignfileset.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesigngeneral.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesignleftmenu.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesignmain.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesignportmap.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\createdesignschematic.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\designfoldermanager.h">
-      <Filter>Design</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Design\schematictool.h">
-      <Filter>Design</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Design\createdesigndetail.cpp">
@@ -85,5 +58,34 @@
     <ClCompile Include="..\..\..\Design\schematictool.cpp">
       <Filter>Design</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\..\Design\createdesigndetail.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesignfileset.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesigngeneral.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesignleftmenu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesignmain.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesignportmap.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\createdesignschematic.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\designfoldermanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\Design\schematictool.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

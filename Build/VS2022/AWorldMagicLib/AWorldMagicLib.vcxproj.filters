@@ -115,6 +115,9 @@
     <ClCompile Include="..\..\..\awelementwindow.cpp">
       <Filter>AWorldMagic</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\mymainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="..\..\..\projectcaptionbtn.h">
@@ -164,6 +167,21 @@
     </QtMoc>
     <QtMoc Include="..\..\..\awcodeedittab.h">
       <Filter>AWorldMagic</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\mymainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\awsidetoolbar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\awelementwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\..\awprojectpan.h">
+      <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
